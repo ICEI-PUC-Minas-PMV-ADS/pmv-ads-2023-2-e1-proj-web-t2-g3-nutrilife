@@ -1,25 +1,27 @@
-# Título do Projeto
+# NutriLife – Informações Nutricionais
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de Aplicação Web Front-End - `
 
-`SEMESTRE`
+`2023/2 - Eixo 1 - Turma 2`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+A falta de condições financeiras, tempo, organização e disciplina podem ser empecilhos para quem busca cuidar da saúde através de uma alimentação saudável. Consultar profissionais da nutrição é uma opção adequada, no entanto, existem pessoas que não possuem dinheiro para o devido acompanhamento. 
+
+A finalidade do projeto é entregar uma opção gratuita de consulta e acompanhamento de um plano alimentar saudável para os usuários, eliminando o obstáculo financeiro no acesso a informações objetivas e confiáveis sobre ingredientes na sua alimentação 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Abraão Vinicius Vicentini
+* Breno Eller Andrade Machado
+* Camila Pereira de Almeida
+* Flávio Vizeu Stellet Soares
+* Gabriel Cardoso
+* Henrique Amaral de Moura
 
 ## Orientador
 
-* Nome completo do professor
+* Joyce Christina de Paiva Carvalho
 
 # Documentação
 
