@@ -2,7 +2,7 @@
 
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`Projeto: Desenvolvimento de Aplicação Web Front-End - `
+`Projeto: Desenvolvimento de Aplicação Web Front-End`
 
 `2023/2 - Eixo 1 - Turma 2`
 
