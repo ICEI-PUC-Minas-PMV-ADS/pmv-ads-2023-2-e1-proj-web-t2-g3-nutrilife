@@ -15,8 +15,8 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
 - Scrum Master: Camila Pereira de Almeida.
 - Product Owner: Henrique Amaral de Moura.
-- Equipe de Desenvolvimento: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Camila Pereira de Almeida, Flávio Vizeu Stellet Soares e Gabriel Cardoso.
-- Equipe de Design: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Camila Pereira de Almeida, Flávio Vizeu Stellet Soares e Gabriel Cardoso.
+- Equipe de Desenvolvimento: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Camila Pereira de Almeida, Flávio Vizeu Stellet Soares, Gabriel Cardoso e Henrique Amaral de Moura.
+- Equipe de Design: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Camila Pereira de Almeida, Flávio Vizeu Stellet Soares, Gabriel Cardoso e Henrique Amaral de Moura.
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
