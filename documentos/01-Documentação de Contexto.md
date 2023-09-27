@@ -1,35 +1,42 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+  É cada vez maior a preocupação com as alterações provocadas pela tecnologia e pela indústria nos hábitos alimentares da população. Foi criado um ambiente onde a disponibilidade de alimentos através de aplicativos de entregas,congelados e ultra processados vai ao encontro de uma rotina cada vez mais acelerada e com tempo escasso para preparações de refeições saudáveis.
+ 
+  De acordo com informações divulgadas pelo Mapa da Obesidade da ABESO (Associação Brasileira para Estudo da Obesidade e Síndrome Metabólica), houve um aumento do número de pessoas obesas de72% no período entre 2006 e 2019,quando atingiu 20,3% da população brasileira. Considerando também indivíduos com excesso de peso, esse percentual chega a 55,4% (ABESO, 2023).
+
+  Nesse contexto, fica clara a importância da informação de qualidade a respeito de alimentação, criada por profissionais especializados para orientar o
+indivíduo a atingir seus objetivos específicos
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
-
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+A falta de condições financeiras, tempo, organização e disciplina podem ser empecilhos para quem busca cuidar da saúde através de uma alimentação saudável. Consultar profissionais da nutrição é uma opção adequada, no entanto, existem pessoas que não possuem dinheiro para o devido acompanhamento. 
 
 ## Objetivos
+A finalidade do projeto é entregar uma opção gratuita de consulta e acompanhamento de um plano alimentar saudável para os usuários, eliminando o obstáculo financeiro no acesso a informações objetivas e confiáveis sobre ingredientes na sua alimentação 
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+<ul>
+<li><strong>Disponibilizar Informações Nutricionais Abrangentes</strong>: Coletar e organizar dados abrangentes de informações nutricionais de fontes confiáveis e apresentar as informações diretamente aos usuários por meio da interface da aplicação; 
+</li>
+<li><strong>Apresentar Substituições de Alimentos Saudáveis</strong>:  Criar uma seção na aplicação que liste alternativas saudáveis para alimentos menos nutritivos. </li>
+<li><strong>Garantir Acessibilidade Econômica</strong>: Disponibilizar todos os recursos e informações de forma gratuita.</li>
+<li><strong>Simplificar a Tomada de Decisões Alimentares</strong>: Possuir interfaces intuitivas e de fácil navegação, para que os usuários possam acessar informações de maneira rápida e eficaz.</li>
+</ul>
 
 ## Justificativa
+Nossa sociedade precisa explorar todos os meios que melhorem a saúde do povo, a fim de se tornar mais eficiente nos cuidados da vida de todos. Alimentar-se bem é fator determinante para diminuir o número de incidências de doenças que podem ser evitadas através deste hábito. 
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+É consenso na medicina que uma dieta balanceada pode prevenir várias doenças. Existem diversas comprovações científicas que postulam a alimentação como fator de grande relevância no acometimento de doenças cardíacas e diabetes. Uma série de estudos vêm sendo elaborados desde o ano de 1976 pelo Nurses’HealthStudy, no qual foram incluídos questionários detalhados sobre a dieta, estilo de vida e saúde dos pacientes do sexo feminino, sendo de grande valia para corroborar várias pesquisas sobre o assunto (Hu, 2016).
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+Aprimorar e difundir o conhecimento de maneira geral é a força motriz na construção da plataforma. Além disso, soluciona o problema da falta de dinheiro, que não deveria ser fator determinante para o afastamento das pessoas na busca de aprimoramentos e cuidados pessoais.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Segundo a Federação Nacional dos Nutricionistas (2023), o custo de uma consulta com profissional especializado é de R$ 185,20 e a elaboração de um cardápio mensal é de R$ 1.851,40. Portanto, o acesso a uma plataforma que forneça informações necessárias a uma alimentação saudável possui o potencial de ajudar a melhorar a vida de muitas pessoas. 
+
 
 ## Público-Alvo
+Pessoas que possuem baixo poder aquisitivo e o desejo de manter uma alimentação saudável.
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
+Pessoas que desejam confiabilidade da informação fornecida.
 
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
+Pessoas que não têm tempo disponível para realizar consulta com um
+profissional da área de forma presencial. 
 
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 
