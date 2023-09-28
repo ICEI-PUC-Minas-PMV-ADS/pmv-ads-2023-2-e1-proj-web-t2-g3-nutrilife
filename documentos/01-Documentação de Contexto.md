@@ -14,7 +14,7 @@ A falta de condições financeiras, tempo, organização e disciplina podem ser 
 A finalidade do projeto é entregar uma opção gratuita de consulta e acompanhamento de um plano alimentar saudável para os usuários, eliminando o obstáculo financeiro no acesso a informações objetivas e confiáveis sobre ingredientes na sua alimentação 
 
 <ul>
-<li><strong>Disponibilizar Informações Nutricionais Abrangentes</strong>: Coletar e organizar dados abrangentes de informações nutricionais de fontes confiáveis e apresentar as informações diretamente aos usuários por meio da interface da aplicação; 
+<li><strong>Disponibilizar Informações Nutricionais </strong>: Coletar e organizar dados abrangentes de informações nutricionais de fontes confiáveis e apresentar as informações diretamente aos usuários por meio da interface da aplicação; 
 </li>
 <li><strong>Apresentar Substituições de Alimentos Saudáveis</strong>:  Criar uma seção na aplicação que liste alternativas saudáveis para alimentos menos nutritivos. </li>
 <li><strong>Garantir Acessibilidade Econômica</strong>: Disponibilizar todos os recursos e informações de forma gratuita.</li>
