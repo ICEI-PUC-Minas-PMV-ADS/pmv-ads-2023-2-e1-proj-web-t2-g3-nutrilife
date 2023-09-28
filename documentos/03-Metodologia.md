@@ -53,10 +53,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
   <li>Testes (Tests)</li>
 </ul>
 
-<figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
-</figure> 
+
   
 ### Ferramentas
 
