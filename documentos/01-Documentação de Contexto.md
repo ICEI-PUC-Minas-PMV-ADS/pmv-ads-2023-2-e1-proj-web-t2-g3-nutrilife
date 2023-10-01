@@ -11,7 +11,7 @@ indivíduo a atingir seus objetivos específicos
 O problema que esta aplicação pretende resolver é a dificuldade de acesso a informações confiáveis sobre alimentação saudável e a um plano alimentar elaborado de acordo com as necessidades e objetivos do indivíduo
 
 ## Objetivos
-A finalidade do projeto é entregar uma opção gratuita de consulta e acompanhamento de um plano alimentar saudável para os usuários, eliminando o obstáculo financeiro no acesso a informações objetivas e confiáveis sobre ingredientes na sua alimentação 
+O ojetivo geral do projeto é desenvolver uma aplicação web que permita ao usuário acessar informações organizadas de forma didática, bem como criar um plano alimentar diário com base nos indicadores calculados dentro da própria aplicação, como IMC (Índice de massa Corporal) e gasto calórico diário. 
 
 <ul>
 <li><strong>Disponibilizar Informações Nutricionais Abrangentes</strong>: Coletar e organizar dados abrangentes de informações nutricionais de fontes confiáveis e apresentar as informações diretamente aos usuários por meio da interface da aplicação; 
@@ -32,11 +32,10 @@ Segundo a Federação Nacional dos Nutricionistas (2023), o custo de uma consult
 
 
 ## Público-Alvo
-Pessoas que possuem baixo poder aquisitivo e o desejo de manter uma alimentação saudável.
+Pessoas que possuem dificuldade de acesso a informações sobre nutrição e a uma profissional especializado, seja por questões financeiras, distância geográfica ou outros fatores, mas que têm o desejo de manter uma alimentação saudável.
 
 Pessoas que desejam confiabilidade da informação fornecida.
 
-Pessoas que não têm tempo disponível para realizar consulta com um
-profissional da área de forma presencial. 
+Pessoas que não têm tempo disponível para realizar consulta com um profissional da área de forma presencial. 
 
 
