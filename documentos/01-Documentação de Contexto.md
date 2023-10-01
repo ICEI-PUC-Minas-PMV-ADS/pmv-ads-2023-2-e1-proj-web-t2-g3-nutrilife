@@ -8,7 +8,7 @@
 indivíduo a atingir seus objetivos específicos
 
 ## Problema
-A falta de condições financeiras, tempo, organização e disciplina podem ser empecilhos para quem busca cuidar da saúde através de uma alimentação saudável. Consultar profissionais da nutrição é uma opção adequada, no entanto, existem pessoas que não possuem dinheiro para o devido acompanhamento. 
+O problema que esta aplicação pretende resolver é a dificuldade de acesso a informações confiáveis sobre alimentação saudável e a um plano alimentar elaborado de acordo com as necessidades e objetivos do indivíduo
 
 ## Objetivos
 A finalidade do projeto é entregar uma opção gratuita de consulta e acompanhamento de um plano alimentar saudável para os usuários, eliminando o obstáculo financeiro no acesso a informações objetivas e confiáveis sobre ingredientes na sua alimentação 
