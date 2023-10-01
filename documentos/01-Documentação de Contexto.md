@@ -22,11 +22,11 @@ A finalidade do projeto é entregar uma opção gratuita de consulta e acompanha
 </ul>
 
 ## Justificativa
-Nossa sociedade precisa explorar todos os meios que melhorem a saúde do povo, a fim de se tornar mais eficiente nos cuidados da vida de todos. Alimentar-se bem é fator determinante para diminuir o número de incidências de doenças que podem ser evitadas através deste hábito. 
+Nossa sociedade precisa explorar todos os meios que melhorem a qualidade de vida da população, a fim de se tornar mais eficiente nos cuidados à saúde de todos. Alimentar-se bem é fator determinante para diminuir o número de incidências de doenças que poderiam ser evitadas através da adoção deste hábito. 
 
 É consenso na medicina que uma dieta balanceada pode prevenir várias doenças. Existem diversas comprovações científicas que postulam a alimentação como fator de grande relevância no acometimento de doenças cardíacas e diabetes. Uma série de estudos vêm sendo elaborados desde o ano de 1976 pelo Nurses’HealthStudy, no qual foram incluídos questionários detalhados sobre a dieta, estilo de vida e saúde dos pacientes do sexo feminino, sendo de grande valia para corroborar várias pesquisas sobre o assunto (Hu, 2016).
 
-Aprimorar e difundir o conhecimento de maneira geral é a força motriz na construção da plataforma. Além disso, soluciona o problema da falta de dinheiro, que não deveria ser fator determinante para o afastamento das pessoas na busca de aprimoramentos e cuidados pessoais.
+Aprimorar e difundir o conhecimento de maneira geral é a força motriz na construção da plataforma. Além disso, auxilia na dificuldade de acesso à informação por questões financeiras, o que não deve ser fator determinante para o afastamento das pessoas na busca de aprimoramentos e cuidados pessoais.
 
 Segundo a Federação Nacional dos Nutricionistas (2023), o custo de uma consulta com profissional especializado é de R$ 185,20 e a elaboração de um cardápio mensal é de R$ 1.851,40. Portanto, o acesso a uma plataforma que forneça informações necessárias a uma alimentação saudável possui o potencial de ajudar a melhorar a vida de muitas pessoas. 
 
