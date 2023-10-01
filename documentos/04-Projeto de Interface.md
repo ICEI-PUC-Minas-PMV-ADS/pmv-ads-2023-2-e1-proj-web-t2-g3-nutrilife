@@ -128,4 +128,14 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
   <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/blob/main/documentos/img/TelaGerarCardapio.JPG"
   <figcaption> Tela de Gerar Receitas
 </figure>
+<hr>
+
+<h3><b>Tela de Calculo de calorias </b></h3>
+<p>Tela onde sera possivel criar realizar o calculo de consumo de calorias </p>
+  
+
+<figure> 
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/blob/main/documentos/img/telacalculodecaloria.JPG"
+  <figcaption> Tela de calculo de gasto de calorias
+</figure>
 
