@@ -30,14 +30,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 O quadro kanban do grupo no GitHub está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/666 e é apresentado, no estado atual, na figura abaixo:
 
-
-<figure> 
-      <figcaption> Tela do kanban no GitHub utilizada pelo grupo </figcaption>
-
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/blob/main/documentos/img/Kambam-Projeto-Nutrilife30092023.PNG">
-</figure> 
-
-
+![Kanban-Projeto-Nutrilife30092023](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/assets/144973239/6603848b-cab3-485d-bad3-6dc6e346907c)
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
