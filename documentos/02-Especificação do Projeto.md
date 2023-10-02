@@ -45,6 +45,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Usuário            | Acessar informações claras sobre grupos alimentares e porções de alimentos |Ter melhor entendimento sobre os componentes de uma dieta saudável |
 | Usuário            | Me comunicar com um profissional de nutrição | Sanar dúvidas sobre o plano alimentares e informações contidas na página |
 | Usuário            | Gerar um cardápio diário com base nas informações de necessidades calóricas | Facilitar o cumprimento de um plano alimentar e objetivos definidos |
+| Usuário            | Gravar minhas receitas favoritas | Acessar mais facilmente as receitas pela minha página de usuário |
 
 ## Requisitos do Projeto
 
