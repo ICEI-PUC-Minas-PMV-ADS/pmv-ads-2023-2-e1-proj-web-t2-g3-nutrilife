@@ -29,10 +29,8 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>A tela de home page apresenta um carrosel de imagens que leva a outras areas do Site, e um menu superior comum a todas as partes do site </p>
   
 
-<figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/blob/main/documentos/img/Tela-Home.JPG"
-  <figcaption> Tela home page
-</figure> 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/assets/144973239/07566131-fa0c-4877-9b1e-3730cbe5ad4d)
+
 <hr>
 
 <h3><b>Tela - Login</b></h3>
@@ -132,8 +130,6 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>Tela onde sera possivel criar realizar o calculo de consumo de calorias </p>
   
 
-<figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/blob/main/documentos/img/telacalculodecaloria.JPG"
-  <figcaption> Tela de calculo de gasto de calorias
-</figure>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/assets/144973239/019e3a37-3221-4e70-8e21-afbd154be3d4)
+
 
