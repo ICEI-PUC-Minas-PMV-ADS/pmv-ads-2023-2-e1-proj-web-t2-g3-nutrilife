@@ -40,11 +40,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
-| Usuario            | Cadastrar dados de peso, altura e restrições alimentares  | Realizar cálculos de Índice de Massa Corporal (IMC) e calorias diárias  |
-| Usuario            | Ter acesso ao resultado das calculadoras de IMC e calorias  | Fornecer dados que irão subsidiar um plano alimentar adequado|
-| Usuario            | Acessar informações claras sobre grupos alimentares e porções de alimentos |Ter melhor entendimento sobre os componentes de uma dieta saudável |
-| Usuario            | Me comunicar com um profissional de nutrição | Sanar dúvidas sobre o plano alimentares e informações contidas na página |
-| Usuario            | Gerar um cardápio diário com base nas informações de necessidades calóricas | Facilitar o cumprimento de um plano alimentar e objetivos definidos |
+| Usuário            | Cadastrar dados de peso, altura e restrições alimentares  | Realizar cálculos de Índice de Massa Corporal (IMC) e calorias diárias  |
+| Usuário            | Ter acesso ao resultado das calculadoras de IMC e calorias  | Fornecer dados que irão subsidiar um plano alimentar adequado|
+| Usuário            | Acessar informações claras sobre grupos alimentares e porções de alimentos |Ter melhor entendimento sobre os componentes de uma dieta saudável |
+| Usuário            | Me comunicar com um profissional de nutrição | Sanar dúvidas sobre o plano alimentares e informações contidas na página |
+| Usuário            | Gerar um cardápio diário com base nas informações de necessidades calóricas | Facilitar o cumprimento de um plano alimentar e objetivos definidos |
 
 ## Requisitos do Projeto
 
@@ -53,15 +53,14 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |  --ID---| Descrição                | Prioridade |
 |----------|---------------------------------|----|
-| RF-01    | O site deve permitir que os usuários se cadastrem na plataforma fornecendo informações básicas, como nome, e-mail e senha.| ALTA | 
-| RF-02    | Os Usuarios poderão realizar cálculos IMC | ALTA |
-| RF-03    | o site deve permitir aos Usuarios o Redirecionamento a plataforma de envio e recebimento de mensagens(Whatsapp e E-mail) para sanar dúvidas com profissional de nutrição | MEDIA   |
-| RF-04    | O Site deve apresentar refeições e ingredientes para criação de cardápio Diario | MEDIA   |
+| RF-01    | A aplicação deve permitir que os usuários se cadastrem na plataforma fornecendo informações básicas, como nome, e-mail e senha.| ALTA | 
+| RF-02    | A aplicação deve possibilitar que os usuários informem dados como altura e peso para efetuar cálculos de IMC e gasto calórico diário | ALTA |
+| RF-03    | A aplicação deve permitir aos usuarios entrar em contato com um nutricionista | MEDIA   |
+| RF-04    | A aplicação deve apresentar itens de alimentação para criação de cardápio diário | MEDIA   |
 | RF-05    | A aplicação deve permitir aos perfis de usuário realizarem login | ALTA   |
 | RF-06    | A aplicação deve disponibilizar opção de pesquisa | MEDIA  |
-| RF-07    | A aplicação deve disponibilizar grupos alimentares com informações nutricionais correspondentes  | ALTA  |
-| RF-08    | Os Usuarios poderão realizar cálculos de consumo diário de calorias | MEDIA |
-| RF-09    | Os Usuarios poderão Favoritar as Receitas que sera mostrado no perfil de usuario | MEDIA |
+| RF-07    | A aplicação deve disponibilizar informações nutricionais sobre grupos alimentares e receitas correspondentes  | ALTA  |
+| RF-08    | A aplicação deve permitir que os usuários favoritem receitas, que serão mostradas no perfil de usuário | MEDIA |
 
 
 
@@ -72,7 +71,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-| RNF-01 |  A aplicação deve ser compatível com exibição em todos os dispositivos e com os navegadores Firefox, Chrome, Safari e Edge. | ALTA   | 
+| RNF-01 | A aplicação deve ser compatível com exibição em todos os dispositivos e com os navegadores Firefox, Chrome, Safari e Edge. | ALTA   | 
 | RNF-02 | Garantir que todas as informações nutricionais fornecidas na plataforma sejam precisas, atualizadas e baseadas em fontes confiáveis. Isso envolve a verificação regular das fontes de dados.| ALTA   |
 | RNF-03 | Manter a plataforma atualizada com as últimas diretrizes nutricionais e tecnológicas para fornecer informações precisas e relevantes.  | MEDIA   | 
 | RNF-04 | Priorizar o design intuitivo e a facilidade de uso para usuários com diferentes níveis de familiaridade com a tecnologia, tornando a plataforma amigável para todos. | ALTA   | 
