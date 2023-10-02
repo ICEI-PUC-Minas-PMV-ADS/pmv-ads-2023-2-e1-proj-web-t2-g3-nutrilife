@@ -120,10 +120,7 @@ As telas do sistema apresentam uma estrutura comum que é apresentada na figura 
 <p>Tela onde sera possivel criar uma receita para o dia mostrando todas as receitas </p>
   
 
-<figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/blob/main/documentos/img/TelaGerarCardapio.JPG"
-  <figcaption> Tela de Gerar Receitas
-</figure>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/assets/144973239/d122af10-040e-4458-8de3-233b858c7087)
 <hr>
 
 <h3><b>Tela de Calculo de calorias </b></h3>
