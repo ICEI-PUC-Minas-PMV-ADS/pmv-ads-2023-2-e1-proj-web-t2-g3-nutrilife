@@ -6,7 +6,10 @@
 }
 
 :root {
-    --cor-padrao-aplicacao: #D9D9D9; /* Defina a variável --cor-destaque com a cor desejada */
+    --cor-padrao-aplicacao: #FF9000; /* Defina a variável --cor-destaque com a cor desejada */
+    --cor-secundaria-fraco: #EDBF83;
+    --cor-secundaria-media: #EDA84D;
+
   }
 
 ul li{
@@ -16,7 +19,7 @@ ul li{
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--cor-padrao-aplicacao);
+    background-color: transparent;
     padding: 20px;
     align-items: center;
 }
