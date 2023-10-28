@@ -1,0 +1,161 @@
+/* Estilização dos elementos das telas de calculadora - podem ser reaproveitados */
+
+/* Botões */
+.botao-destaque-padrao {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    color: #fcf2eb;
+    font-weight: 500;
+    font-size: 14px;    
+    text-align: center;
+    background-color: var(--cor-padrao-aplicacao);
+    border: 2px solid var(--cor-padrao-aplicacao);
+    padding: 7px 40px;
+    border-radius: 7px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.botao-destaque-padrao:hover {
+    background-color: #e1850d;
+}
+
+.botao-fraco {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    color: #fcaf4a;
+    font-weight: bolder;
+    font-size: 14px;    
+    text-align: center;
+    background-color: #fffffe;
+    border: 3px solid #fcaf4a;
+    padding: 7px 40px;
+    border-radius: 7px;
+    margin: 15px;
+
+}
+
+
+/* Elementos de Texto */
+.titulo {
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin: auto;
+}
+
+.titulo-destaque-laranja {
+    text-align: center;
+    display: inline-block;
+    color: #FF9000;
+    font-weight: bold;
+    
+}
+
+.botoes-calc-cal {
+    display: flex;
+}
+
+/* Containers */
+.container-calc-cal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;          
+    width: 80%;
+    min-height: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: #fef6ef;
+    border-radius: 20px;
+    margin: auto;
+    top: 20px;
+    position: relative;
+    align-content: center;
+}
+
+.container-calc-cal-res {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;          
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background-color: #fef6ef;
+    border-radius: 20px;
+    top: 50px;
+    margin: auto;
+    position: relative;
+    align-content: center;
+    gap: 7px; 
+    text-align: center;   
+}
+
+.transicao-result {
+    position: relative;
+    text-align: center;
+    top: 80px;
+}
+
+.container-calc-cal-obj {
+    display: flex;
+    flex-direction:column; 
+    align-items: center;          
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background-color: #fef6ef;
+    border-radius: 20px;
+    top: 100px;
+    margin: auto;
+    position: relative;
+    align-content: center;
+    gap: 7px; 
+    text-align: center;   
+}
+
+
+.form-cal-1 {
+    display: flex;
+    margin: 30px;
+    gap: 15px;
+}
+.form-cal-2 {
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.label-input-calc {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+}
+
+
+.label-input-calc input, select {
+    border-radius: 15px;
+    border: none;
+
+}
+
+.label-input-calc-obj {
+    
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    align-items: center;
+
+}
+
+.objetivo {
+    display: flex;
+    gap: 20px;
+}
