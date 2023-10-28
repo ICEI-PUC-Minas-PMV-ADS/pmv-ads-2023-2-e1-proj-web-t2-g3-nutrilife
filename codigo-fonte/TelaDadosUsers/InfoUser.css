@@ -104,7 +104,7 @@ header {
     margin-left: 20px;
     border-radius: 10px;      /*  Estiliza uma pequena caixa a esquerda que contem pouca informação */
     flex-direction: column;
-    background-color: #ffae00;
+    background-color: lightgray;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -131,8 +131,8 @@ header {
 }
 
 .MeusDados {
-    background-color: #ffae00;
-    background-image: url("imgs/Userdate.png");
+    background-color: lightgray;
+    /* background-image: url("imgs/Userdate.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 52%;
@@ -233,8 +233,8 @@ section {
 }
 
 .MeusFavs{
-    background-color: #ffae00;
-    background-image: url("imgs/Userdate.png");
+    background-color: lightgray;
+    /* background-image: url("imgs/Userdate.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 79%;
