@@ -233,8 +233,8 @@ section {
 }
 
 .MeusFavs{
-    background-color: #ffae00;
-    background-image: url("imgs/Userdate.png");
+    background-color: #ffae00; 
+    background-image: url("imgs/Userdate.png"); 
     background-repeat: no-repeat;
     background-size: cover;
     width: 79%;
@@ -244,6 +244,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 10px 5px rgba(54, 54, 54, 0.5);
+   
     
 }
 
