@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrilife - Calculadora de Calorias</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/codigo-fonte/style.css">
+    <link rel="stylesheet" href="/codigo-fonte/Calculadoras/stylecalc.css">
+</head>
+<body>
+    <header>
+        <div class="icon-and-text-header">
+            <img src="/codigo-fonte/imgs/icon.png">
+            <h1>NutriLife</h1>
+        </div>
+        <nav class="navbar-header">
+            <ul>
+                <li><a>Gerar cardápio</a></li>
+                <li><a>Calculadora<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
+                <li><a>Alimentos<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
+            </ul>
+        </nav>
+        <div class="button-profile-and-search-input">
+            <div class="search-box">
+                <input type="text" class="search-input">
+                <button class="search-button"><img src="/codigo-fonte/imgs/loupe 2.png"></button>
+            </div>
+            <button class="button-profile">
+                <img src="/codigo-fonte/imgs/user-interface 1.png">
+            </button>
+        </div>    
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Calculadora de <span class="titulo-destaque-laranja">Gasto Calórico</span></h1>            
+        </div>
+        
+        
+        <div class="container-calc-cal">
+            <h3>Preencha os dados abaixo para calcular o seu gasto calórico diário:</h3>
+            <form action="register.php" method="get">
+                <div class="form-cal-1">
+                    <div class="label-input-calc">
+                        <label for="altura">Altura (m)</label>
+                        <input type="text" name="altura">
+                    </div>
+                    <div class="label-input-calc">        
+                        <label for="peso">Peso (kg)</label>
+                        <input type="text" name="peso">
+                    </div>
+                    <div class="label-input-calc">
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="nao-informar">Prefiro não informar</option>
+                        </select> 
+                    </div>     
+                </div>      
+                        
+                <div class="form-cal-2">
+                    <div class="label-input-calc">
+                        <label for="idade">Idade</label>
+                        <input type="text" name="idade">
+                    </div>
+                    <div class="label-input-calc">
+                        <label for="atividade">Nível de Atividade Física</label>
+                        <input type="text" name="atividade">
+                    </div>
+                </div>
+            </form>
+            <div class="botoes-calc-cal">
+                <div class="botao-fraco">
+                    <p>Limpar</p>
+                </div>
+                <div class="botao-destaque-padrao">
+                    <p>Calcular</p>
+                    <!-- <input type="submit" value="Calcular"> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container-calc-cal-res">
+            <h3>Resultado:</h3>
+            <p>O seu gasto calórico basal é de: _____ kCal</p>
+            <p>Esse valor também é chamado de taxa metabólica basal e servirá como referência para a construção do seu plano alimentar</p>
+        </div>
+
+        <div class="transicao-result"> 
+            <h2>Como utilizar essa informação?</h2>
+        </div>
+
+        <div class="container-calc-cal-obj">
+            <div class="objetivo">
+                <p>Qual é o seu objetivo?</p> 
+                <form>
+                    <div class="label-input-calc">
+                        <select name="objetivo">
+                            <option value="perda de peso">Perda de peso</option>
+                            <option value="manutencao">Manutenção de peso</option>
+                            <option value="ganho">Ganho de massa</option>
+                        </select> 
+                    </div>
+                </form>
+            </div>
+            <p>Voce deverá consumir ____ Kcal por dia. Use o nosso <a href="/codigo-fonte/gerar-cardapio.html">Gerador de Cardápio</a> para auxiliá-lo</p>
+
+        </div>
+        
+    </main>
+    <section>
+
+
+    </section>
+</body>
+</html>
