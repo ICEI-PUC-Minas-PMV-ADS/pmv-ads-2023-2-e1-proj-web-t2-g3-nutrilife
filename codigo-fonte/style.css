@@ -31,16 +31,27 @@ header {
     z-index: 9999;
 }
 
+.navbar-header {
+    display: flex;
+    width: 100%;
+}
+
 .navbar-header ul {
     display: flex;
     gap: 20px;
     height: 100%;
     align-items: center;
-    margin-left: 400px;
 }
 
 .navbar-header ul li a {
     font-size: 20px;
+}
+
+.content-header {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    gap: 20px;
 }
 
 .navbar-header ul li a{
@@ -55,6 +66,7 @@ header {
     align-items: center;
     margin-left: 20px;
     gap: 10px;
+    width: 30%;
 }
 
 .search-box {
