@@ -1,6 +1,11 @@
 /* Estilização dos elementos das telas de calculadora - podem ser reaproveitados */
 
 /* Botões */
+
+main {
+    margin-top: 150px;
+}
+
 .botao-destaque-padrao {
     position: relative;
     width: 180px;
@@ -64,7 +69,6 @@
     flex-direction: column; 
     align-items: center;          
     width: 80%;
-    min-height: 300px;
     height: auto;
     padding: 10px;
     background-color: #fef6ef;
@@ -100,19 +104,19 @@
 
 .container-calc-cal-obj {
     display: flex;
-    flex-direction:column; 
+    flex-direction: column; 
     align-items: center;          
     width: 80%;
     height: auto;
     padding: 10px;
     background-color: #fef6ef;
     border-radius: 20px;
-    top: 100px;
+    top: 90px;
     margin: auto;
     position: relative;
     align-content: center;
     gap: 7px; 
-    text-align: center;   
+    text-align: center;      
 }
 
 
@@ -152,10 +156,14 @@
     border-radius: 15px;
     border: none;
     align-items: center;
-
+    
 }
 
 .objetivo {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 15px;
+    
 }
+
