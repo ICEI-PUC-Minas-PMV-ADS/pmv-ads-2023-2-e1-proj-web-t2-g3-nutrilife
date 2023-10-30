@@ -1,6 +1,6 @@
 .video-receita {
     width: 70%;
-    background-color: #D9D9D9;
+    background-color: #fef6ef;
     height: 300px;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@ main {
 
 .ingredientes-receita {
     width: 50%;
-    background-color: #D9D9D9;
+    background-color: #fef6ef;
     height: 300px;
     align-items: center;
     justify-items: center;
