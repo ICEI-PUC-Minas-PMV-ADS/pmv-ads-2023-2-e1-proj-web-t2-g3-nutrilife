@@ -1,6 +1,11 @@
 /* Estilização dos elementos das telas de calculadora - podem ser reaproveitados */
 
 /* Botões */
+
+main {
+    margin-top: 150px;
+}
+
 .botao-destaque-padrao {
     position: relative;
     width: 180px;
@@ -54,6 +59,42 @@
     
 }
 
+.titulo-cardapio {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    padding-left: 25px;
+}
+
+.titulo-refeicoes-cardapio {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-top: 30px;
+    padding-left: 25px
+}
+
+.titulo-destaque-laranja-cardapio {
+    text-align: center;
+    display: inline-block;
+    color: #FF9000;
+    font-weight: bold;    
+}
+
+.descricao-cardapio {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 10px 15px;
+    max-width: 65%;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: justify;
+    gap: 15px;
+    background-color: #fef6ef;
+    border-radius: 20px;
+}
+
 .botoes-calc-cal {
     display: flex;
 }
@@ -64,7 +105,6 @@
     flex-direction: column; 
     align-items: center;          
     width: 80%;
-    min-height: 300px;
     height: auto;
     padding: 10px;
     background-color: #fef6ef;
@@ -100,21 +140,37 @@
 
 .container-calc-cal-obj {
     display: flex;
-    flex-direction:column; 
+    flex-direction: column; 
     align-items: center;          
     width: 80%;
     height: auto;
     padding: 10px;
     background-color: #fef6ef;
     border-radius: 20px;
-    top: 100px;
+    top: 90px;
     margin: auto;
     position: relative;
     align-content: center;
     gap: 7px; 
-    text-align: center;   
+    text-align: center;      
 }
 
+.container-refeicoes-cardapio {
+    display: flex;
+    flex-direction: column; 
+    height: 30%;
+    background-color: #fef6ef;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.card-refeicoes-cardapio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fbf9f8;
+    
+}
 
 .form-cal-1 {
     display: flex;
@@ -152,10 +208,57 @@
     border-radius: 15px;
     border: none;
     align-items: center;
-
+    
 }
 
 .objetivo {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 15px;
+    
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}  
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 15px;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.2s; /* Adicione uma transição suave na propriedade 'transform' */
+    background-color: white;
+    
+    
+}
+
+.card img {
+    max-width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+
+
+.card a {
+    text-decoration: none; 
+    color: black;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Aumente a escala em 10% quando o mouse passa por cima */
 }
