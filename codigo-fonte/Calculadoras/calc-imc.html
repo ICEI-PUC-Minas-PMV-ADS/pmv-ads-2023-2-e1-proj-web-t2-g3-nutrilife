@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrilife - Calculadora de Calorias</title>
+    <title>Nutrilife - Calculadora de IMC</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -12,35 +12,33 @@
 </head>
 <body>
     <header>
-        <div class="icon-and-text-header">
-            <img src="/codigo-fonte/imgs/icon.png">
-            <h1>NutriLife</h1>
-        </div>
         <nav class="navbar-header">
-            <ul>
-                <li><a>Gerar cardápio</a></li>
-                <li><a>Calculadora<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
-                <li><a>Alimentos<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
-            </ul>
-        </nav>
-        <div class="button-profile-and-search-input">
-            <div class="search-box">
-                <input type="text" class="search-input">
-                <button class="search-button"><img src="/codigo-fonte/imgs/loupe 2.png"></button>
+            <div class="icon-and-text-header">
+                <img src="/codigo-fonte/imgs/icon.png">
+                <h1>NutriLife</h1>
             </div>
-            <button class="button-profile">
-                <img src="/codigo-fonte/imgs/user-interface 1.png">
-            </button>
-        </div>    
-    </header>
+            <div class="content-header">
+                <ul>
+                    <li><a>Calculadora<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
+                    <li><a>Alimentos<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
+                </ul>     
+                <div class="button-profile-and-search-input">
+                    
+                    <button class="button-profile">
+                        <img src="/codigo-fonte/imgs/user-interface 1.png">
+                    </button>
+                </div> 
+            </div>          
+        </nav>   
+    </header> 
     <main>
         <div class="titulo">
-            <h1>Calculadora de <span class="titulo-destaque-laranja">Gasto Calórico</span></h1>            
+            <h1>Calculadora de <span class="titulo-destaque-laranja">IMC</span></h1>            
         </div>
         
         
         <div class="container-calc-cal">
-            <h3>Preencha os dados abaixo para calcular o seu gasto calórico diário:</h3>
+            <h3>Preencha os dados abaixo para calcular o seu IMC (Índice de Massa Corporal):</h3>
             <form action="register.php" method="get">
                 <div class="form-cal-1">
                     <div class="label-input-calc">
@@ -52,25 +50,11 @@
                         <input type="text" name="peso">
                     </div>
                     <div class="label-input-calc">
-                        <label for="sexo">Sexo</label>
-                        <select name="sexo">
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="nao-informar">Prefiro não informar</option>
+                        <label for="idade">Idade</label>
+                        <input type="text" name="idade">
                         </select> 
                     </div>     
                 </div>      
-                        
-                <div class="form-cal-2">
-                    <div class="label-input-calc">
-                        <label for="idade">Idade</label>
-                        <input type="text" name="idade">
-                    </div>
-                    <div class="label-input-calc">
-                        <label for="atividade">Nível de Atividade Física</label>
-                        <input type="text" name="atividade">
-                    </div>
-                </div>
             </form>
             <div class="botoes-calc-cal">
                 <div class="botao-fraco">
@@ -85,35 +69,23 @@
 
         <div class="container-calc-cal-res">
             <h3>Resultado:</h3>
-            <p>O seu gasto calórico basal é de: _____ kCal</p>
-            <p>Esse valor também é chamado de taxa metabólica basal e servirá como referência para a construção do seu plano alimentar</p>
+            <p>O seu IMC é: _____</p>
+            <p>Esse valor corresponde à classificação de ___________, de acordo com a tabela abaixo:</p>
+            <div class="img-imc">
+                <img src="/codigo-fonte/imgs/IMC_Laranja.png" alt="Tabela com classificão de IMC - índice de massa corporal" width="70%" height="70%">
+            </div>
         </div>
 
         <div class="transicao-result"> 
-            <h2>Como utilizar essa informação?</h2>
+            <h2>Algumas Dicas:</h2>
         </div>
 
         <div class="container-calc-cal-obj">
             <div class="objetivo">
-                <p>Qual é o seu objetivo?</p> 
-                <form>
-                    <div class="label-input-calc">
-                        <select name="objetivo">
-                            <option value="perda de peso">Perda de peso</option>
-                            <option value="manutencao">Manutenção de peso</option>
-                            <option value="ganho">Ganho de massa</option>
-                        </select> 
-                    </div>
-                </form>
-            </div>
-            <p>Voce deverá consumir ____ Kcal por dia. Use o nosso <a href="/codigo-fonte/gerar-cardapio.html">Gerador de Cardápio</a> para auxiliá-lo</p>
-
-        </div>
-        
+                <p>O <u>Índice de Massa Corporal</u> é <strong>apenas um indicador</strong>  do peso ideal e do risco de aparecimento de doenças crônicas, porém, não leva em consideração a <strong>composição corporal</strong> (relação músculos X percentual de gordura)</p>
+                <p>Descubra o seu gasto calórico diário com a nossa <a href="/codigo-fonte/Calculadoras/calc-cal.html"><span class="titulo-destaque-laranja"><u>Calculadora de Gasto Calórico</u></span></a> para auxiliá-lo</p>
+            </div>         
+        </div>        
     </main>
-    <section>
-
-
-    </section>
 </body>
 </html>
