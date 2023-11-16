@@ -17,7 +17,7 @@ A finalidade do projeto é entregar uma opção gratuita de consulta e acompanha
 * Camila Pereira de Almeida
 * Flávio Vizeu Stellet Soares
 * Gabriel Cardoso
-* Henrique Amaral de Moura
+
 
 ## Orientador
 
