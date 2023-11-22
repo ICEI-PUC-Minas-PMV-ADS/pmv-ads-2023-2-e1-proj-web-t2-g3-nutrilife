@@ -1,3 +1,5 @@
+@import url("../style.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -6,288 +8,104 @@
 }
 
 :root {
-    --cor-padrao-aplicacao: #FF9000; /* Defina a variável --cor-destaque com a cor desejada */
+    --cor-padrao-aplicacao: #FF9000;
     --cor-secundaria-fraco: #EDBF83;
     --cor-secundaria-media: #EDA84D;
 
-  }
+}
 
-/* INICIO HEADER */
+body {
+    background: url("./imgs/backgroud.png") no-repeat;
 
-ul li{
+}
+
+ul {
     list-style: none;
 }
 
-header {
+/* Area onde fica Meu Perfil */
+.container__dados {
     display: flex;
-    position: fixed;
-    justify-content: space-between;
-    background-color: #FFF;
-    padding: 20px;
-    align-items: center;
-    top: 0;
-    box-shadow: 0px 0px 5px 0px;
-    width: 100%;
-    z-index: 9999;
-}
-
-.navbar-header {
-    display: flex;
-    width: 100%;
-}
-
-.navbar-header ul {
-    display: flex;
-    gap: 20px;
-    height: 100%;
-    align-items: center;
-}
-
-.navbar-header ul li a {
-    font-size: 20px;
-}
-
-.content-header {
-    display: flex;
-    width: 100%;
-    justify-content: end;
-    gap: 20px;
-}
-
-.navbar-header ul li a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.icon-and-text-header {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    gap: 10px;
-    width: 30%;
-}
-
-.search-box {
-    background-color: white;
-    border-radius: 20px;
-    height: 30px;
-    width: 250px;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
-    box-shadow: 2px 5px 4px -5px black;
-}
-
-.search-input {
-    border: none;
-    width: 90%;
-}
-
-.search-button {
-    border: none;
-    display: flex;
-    margin-right: 10px;
-}
-
-.search-button img {
-    height: 20px;
-}
-
-.button-profile {
-    margin-right: 30px;
-    border: none;
-    background-color: transparent;
-    display: flex;
-}
-
-.button-profile-and-search-input {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-
-/* Inicio Estilos TelaInfoUser.HTML */
-.container {
-    display: grid;
-    margin-top: 150px;
-
-}
-
-.MeuPerfil {
-    display: flex;
-    width: 180px;
-    height: 120px;
-    margin-left: 20px;
-    border-radius: 10px;      /*  Estiliza uma pequena caixa a esquerda que contem pouca informação */
     flex-direction: column;
-    background-color: lightgray;
-    background-repeat: no-repeat;
-    background-size: cover;
+    row-gap: 1rem;
+    margin: 8rem 0 0 0.3rem;
 }
 
-.MeuPerfil p {
-    margin-left: 10px;  
-    font-size: large;           /*  Configura os paragrafos que contem textos dentro desta caixinha a esquerda */
-    padding: 2px;
+.container__dados__nav {
+    background-color: var(--cor-secundaria-fraco);
+    padding: 2%;
+    width: 8rem;
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0.3rem gray;
+}
+
+.nav__lista__item a {
     text-decoration: none;
-}
-
-.MeuPerfil a {
-    text-decoration: none;      /*  Remove os estilos das ancoras  */
     color: black;
 }
 
-.MeuPerfil a:hover {
-    color: blue;
+.nav__lista__item a:hover {
+    color: purple;
 }
 
-.MeuPerfil h2 {
-    margin-left: 10px;
-    margin-top: 10px;   
-}
+/* ############## FIM ############# */
 
-.MeusDados {
-    background-color: lightgray;
-    /* background-image: url("imgs/Userdate.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 52%;
-    height: 163%;
-    border-radius: 10px;                             /*  Cria uma caixa responsiva que contem os dados dos usuarios  */
+/* inicio onde fica os dados do usuario */
+.Container__meusDados {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 10px 5px rgba(54, 54, 54, 0.5);
 }
 
-.MeusDados h1 {
-    margin-top: 15px;   
-}
-
-section {
-    display: flex;       /* foi criada uma section para que os itens acabassem organizados horizontalmente de maneira mais facil  */
-}
-
-.DadosNumericos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-
-.DadosUser {
-    display: grid;
-    margin-top: 60px;
-    align-self: start;
-    margin-left: 80px;
-}
-
-.DadosUser p {
-    font-size: 16px;
-    margin: 10px 0;
-    /* Adiciona margem vertical para separar os elementos */
+.meusDados__titulo {
+    align-self: center;
+    margin-bottom: 1rem;
     font-weight: 1000;
 }
 
-.IMC {
-    
-    width: 180px;
-    height: 120px;
+.meusDados__DadosNumericos {
     display: flex;
-    font-size: 16px;
-    margin: 0px 80px 0px 70px;
-    /* Adiciona margem vertical para separar os elementos */
-    display: grid;
-    justify-content: center;
-    font-weight: 1000;
-    /* background-color: white; */
-
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-.nome,
-.email {
-   
-    height: 30px;
-    width: 250px;
-    
-}
-
-.ValImc, .ValCal{
-    font-size: 400%;
-}
-
-/* Fim Estilos TelaInfoUser.HTML */
-
- /*  inicio TelaFav.HTML  */
-
-
- .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    margin: 10px;
+.meusDados__IMC,
+.meusDados__gastoCalorico {
     text-align: center;
-    display: inline-block;
-    transition: transform 0.2s; /* Adicione uma transição suave na propriedade 'transform' */
-    background-color: white;
-    
-    
+    line-height: 1.1;
 }
 
-.card img {
-    max-width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.valorImc,
+.gastoCalorico {
+    font-size: 5rem;
 }
 
-.card-text {
-    padding: 10px;
-}
-
-.MeusFavs{
-    background-color: lightgray;
-    /* background-image: url("imgs/Userdate.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 79%;
-    height: 119%;
-    border-radius: 10px;                             /*  Cria uma caixa responsiva que contem os dados dos usuarios  */
-    display: grid ;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 10px 5px rgba(54, 54, 54, 0.5);
-    
-}
-
-.MeusFavs h1 {
-    place-self: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}  
-
-.card a {
-    text-decoration: none; 
-    color: black;
-}
-
-.card:hover {
-    transform: scale(1.1); /* Aumente a escala em 10% quando o mouse passa por cima */
+.DadosUsuario {
+    text-align: center;
+    line-height: 2;
 }
 
 
+@media screen and (min-width: 564px) {
+    body {
+        background: none;
+    }
+
+
+    .container__dados {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+    }
+
+    .container__dados__nav{
+        align-self: flex-start;
+        width: auto;
+
+    }
+
+    .Container__meusDados{
+        margin: auto;
+    }
+
+}

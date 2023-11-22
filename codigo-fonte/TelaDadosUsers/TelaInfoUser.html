@@ -11,44 +11,61 @@
 
 <body class="container">
     <header>
-        <div class="icon-and-text-header">
-            <img src="imgs/icon.png">
-            <h1>NutriLife</h1>
-        </div>
         <nav class="navbar-header">
-            <ul>
-                <li><a>Gerar cardápio</a></li>
-                <li><a>Calculadora<img src="imgs/down-arrow 2.png"></a></li>
-                <li><a>Alimentos<img src="imgs/down-arrow 2.png"></a></li>
-            </ul>
-        </nav>
-        <div class="button-profile-and-search-input">
-            <div class="search-box">
-                <input type="text" class="search-input">
-                <button class="search-button"><img src="imgs/loupe 2.png"></button>
+            <div class="icon-and-text-header">
+                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" height="80px" width="auto"></a>                
             </div>
-            <button class="button-profile">
-                <img src="imgs/user-interface 1.png">
-            </button>
-        </div>
+            <div class="content-header">
+                <ul>
+                    <li><a href="#">Calculadoras</a>
+                        <ul>
+                            <li><a href="/codigo-fonte/Calculadoras/calc-imc.html">Índice de Massa Corporal</a></li>
+                            <li><a href="/codigo-fonte/Calculadoras/calc-cal.html">Gasto Calórico Diário</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="/codigo-fonte/GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
+                </ul>     
+                <div class="button-profile-and-search-input">
+                    
+                    <button class="button-profile">
+                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html"><img src="imgs/user-interface 1.png"></a>
+                    </button>
+                </div> 
+            </div>          
+        </nav>   
     </header>
-    <section>
-        <div class="MeuPerfil">
-            <h2>Meu Perfil</h2>
-            <p><a href="TelaInfoUser.html">Meus Dados</a></p>
-            <p><a href="TelaFav.html">Favoritos</a></p>
-        </div>
-        <div class="MeusDados">
-            <h1>Dados Pessoais</h1>
-            <span class="DadosNumericos">
-                <span class="IMC"><p>Seu Imc</p><p class="ValImc">29</p><p>Peso Ideal</p></span>
-                <span class="IMC"><p>Gasto Calorico Diario</p><p class="ValCal">2000</p><p>Kcal</p></span>
+    <section class="container__dados">
+        <!-- <nav class="container__dados__nav">
+            <h3>Meu Perfil</h3>
+            <ul class="container__nav__lista">
+                <li class="nav__lista__item">
+                    <a href="TelaInfoUser.html">Meus Dados</a>
+                </li>
+                <li class="nav__lista__item">
+                    <a href="TelaFav.html">Favoritos</a>
+                </li>
+            </ul>
+        </nav> -->
+        <div class="Container__meusDados">
+            <h1 class="meusDados__titulo">Dados Pessoais</h1>
+            <span class="meusDados__DadosNumericos">
+                <span class="meusDados__IMC">
+                    <h3>Seu IMC</h3>
+                    <p class="valorImc">29</p>
+                    <p>Peso Ideal</p>
+                </span>
+                <span class="meusDados__gastoCalorico">
+                    <h3>Gasto Calorico Diario</h3>
+                    <p class="gastoCalorico">2000</p>
+                    <p>Kcal</p>
+                </span>
             </span>
-            <span class="DadosUser">
-                <p>Nome Completo : </p>
+            <span class="DadosUsuario">
+                <h3>Nome Completo : </h3>
                 <!-- Estes Spans receberam informações do script para atualizar os dados dos usuarios -->
                 <span class="nome">Fulano Da Silva</span>
-                <p>E-mail :</p>
+                <h3>E-mail :</h3>
                 <span class="email">exemplo@exemplo.com</span>
             </span>
 
