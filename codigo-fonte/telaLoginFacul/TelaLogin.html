@@ -29,10 +29,10 @@
 
                         <form>
                             <label class="label">E-MAIL</label><br>
-                            <input class="info" id="email" type="text" placeholder="user@mail.com"><br>
+                            <input class="info" id="email" type="text" placeholder="user@mail.com" required><br>
 
                             <label class="label">SENHA</label><br>
-                            <input class="info" id="password" type="password" placeholder="*******"><br>
+                            <input class="info" id="password" type="password" placeholder="*******" required><br>
 
                             <button id="button" class="login" type="submit">ENTRAR</button>
 
@@ -41,15 +41,15 @@
                     </div>
                     <div id="registration-section" style="display: none">
                         <h1>Registre-se</h1>
-                        <form>
+                        <form id="registerForm">
                             <label class="label">NOME</label><br>
-                            <input class="info" id="NewName" type="text" placeholder="Seu nome"><br>
+                            <input class="info" id="NewName" type="text" placeholder="Seu nome" required><br>
 
                             <label class="label">E-MAIL</label><br>
-                            <input class="info" id="NewEmail" type="text" placeholder="user@mail.com"><br>
+                            <input class="info" id="NewEmail" type="text" placeholder="user@mail.com" required><br>
 
                             <label class="label">SENHA</label><br>
-                            <input class="info" id="NewPassword" type="password" placeholder="*******"><br>
+                            <input class="info" id="NewPassword" type="password" placeholder="*******" autocomplete="off" required><br>
 
                             <button id="register-button" class="login" type="submit">REGISTRAR</button>
                         </form>
