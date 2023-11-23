@@ -46,3 +46,29 @@ formularioRegistro.addEventListener("submit", function (event) {
 
     }
 });
+
+const formularioLogin = document.getElementById("loginForm");
+
+formularioLogin.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("password").value;
+
+    const usuariosRegistrados = JSON.parse(localStorage.getItem("usuariosRegistrados")) || [];
+    const usuarioCorrespondente = usuariosRegistrados.find(u => u.email === email && u.senha === senha);
+
+    if (usuarioCorrespondente) {
+        alert("Login bem-sucedido!");
+        console.log("Usuário logado:", usuarioCorrespondente);
+
+        // Defina o usuário logado antes de redirecionar
+        localStorage.setItem("usuarioLogado", JSON.stringify(usuarioCorrespondente));
+
+        // Redirecione para a página de dados do usuario
+        window.location.href = '../TelaDadosUsers/TelaInfoUser.html';
+        
+    } else {
+        alert("Credenciais inválidas. Tente novamente.");
+    }
+});
