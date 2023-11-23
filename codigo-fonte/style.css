@@ -6,11 +6,12 @@
 }
 
 :root {
-    --cor-padrao-aplicacao: #FF9000; /* Defina a variável --cor-destaque com a cor desejada */
+    --cor-padrao-aplicacao: #FF9000;
+    /* Defina a variável --cor-destaque com a cor desejada */
     --cor-secundaria-fraco: #EDBF83;
     --cor-secundaria-media: #EDA84D;
 
-  }
+}
 
 /* INICIO HEADER */
 
@@ -49,12 +50,12 @@ header {
     gap: 20px;
 }
 
-.content-header ul li{
+.content-header ul li {
     list-style: none;
     position: relative;
 }
 
-.content-header ul li a{
+.content-header ul li a {
     display: block;
     font-size: 20px;
     color: #222;
@@ -62,19 +63,33 @@ header {
     justify-content: center;
     align-items: center;
     list-style: none;
-    cursor: pointer;    
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 3px;
     padding-bottom: 10px;
 
 }
 
-.content-header ul li ul{
-    display: none;
-    position:absolute;
+.link-login {
+    text-decoration: none;
+    font-size: 20px;
+    background-color: var(--cor-padrao-aplicacao);
+    color: #FFF;
+    margin-bottom: 0.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: 60px;
 }
 
-.content-header ul li:hover ul{
+.link-login:hover {
+    background-color: #e07f00;
+}
+
+.content-header ul li ul {
+    display: none;
+    position: absolute;
+}
+
+.content-header ul li:hover ul {
     display: block;
 }
 
@@ -163,12 +178,12 @@ header {
 
 .content-text-button-home button {
     width: 200px;
-    height: 50px;    
+    height: 50px;
     background-color: var(--cor-padrao-aplicacao);
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    
+
 }
 
 .content-text-button-home a {
@@ -203,6 +218,38 @@ header {
     bottom: 40%;
     transform: translate(-10%, 50%);
 }
+
+.menu-user {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 1.5%;
+    width: 8%;
+    
+   
+}
+
+.menu-user li {
+    background-color: #FFF;
+    padding: 0.3rem;
+    text-align: center;
+   
+}
+
+.menu-user li a {
+    padding: 0;
+    
+
+}
+
+.menu-user a:hover {
+    background-color:  var(--cor-padrao-aplicacao);
+    /* Adicione um efeito de destaque no hover */
+    color: white;
+}
+
+
 
 @media (max-width: 1100px) {
     .content-first-section-img {
@@ -241,8 +288,8 @@ header {
 }
 
 @media (max-width: 500px) {
-    
-    
+
+
     .container-main {
         margin-left: 0;
     }

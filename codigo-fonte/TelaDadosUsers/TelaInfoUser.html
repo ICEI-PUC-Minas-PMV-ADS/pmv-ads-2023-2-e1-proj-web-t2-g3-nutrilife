@@ -13,7 +13,8 @@
     <header>
         <nav class="navbar-header">
             <div class="icon-and-text-header">
-                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" height="80px" width="auto"></a>                
+                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" height="80px"
+                        width="auto"></a>
             </div>
             <div class="content-header">
                 <ul>
@@ -23,50 +24,48 @@
                             <li><a href="/codigo-fonte/Calculadoras/calc-cal.html">Gasto Calórico Diário</a></li>
                         </ul>
                     </li>
-                    
+
                     <li><a href="/codigo-fonte/GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
-                </ul>     
+                </ul>
                 <div class="button-profile-and-search-input">
-                    
-                    <button class="button-profile" >
-                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html"><img src="imgs/user-interface 1.png"></a>
+                    <button class="button-profile" id="profileButton">
+                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html" class="link-login" id="loginLink">Login</a>
+                        <img src="imgs/user-interface 1.png" alt="User Interface" id="userImageLink">
+                        <nav>
+                            <ul class="menu-user" id="dropdownMenu" style="display: none">
+                                <li><a href="./TelaInfoUser.html">Meus Dados</a></li>
+                                <li><a href="./TelaFav.html">Favoritos</a></li>
+                                <li id="logoutButton"><a href="">Sair</a></li>
+                            </ul>
+                        </nav>
                     </button>
-                </div> 
-            </div>          
-        </nav>   
+                </div>
+
+            </div>
+        </nav>
     </header>
     <section class="container__dados">
-        <!-- <nav class="container__dados__nav">
-            <h3>Meu Perfil</h3>
-            <ul class="container__nav__lista">
-                <li class="nav__lista__item">
-                    <a href="TelaInfoUser.html">Meus Dados</a>
-                </li>
-                <li class="nav__lista__item">
-                    <a href="TelaFav.html">Favoritos</a>
-                </li>
-            </ul>
-        </nav> -->
+     
         <div class="Container__meusDados">
             <h1 class="meusDados__titulo">Dados Pessoais</h1>
             <span class="meusDados__DadosNumericos">
                 <span class="meusDados__IMC">
                     <h3>Seu IMC</h3>
-                    <p class="valorImc">29</p>
-                    <p>Peso Ideal</p>
+                    <p class="valorImc"></p>
+                    <p></p>
                 </span>
                 <span class="meusDados__gastoCalorico">
                     <h3>Gasto Calorico Diario</h3>
-                    <p class="gastoCalorico">2000</p>
+                    <p class="gastoCalorico"></p>
                     <p>Kcal</p>
                 </span>
             </span>
             <span class="DadosUsuario">
                 <h3>Nome Completo : </h3>
                 <!-- Estes Spans receberam informações do script para atualizar os dados dos usuarios -->
-                <span class="nome">Fulano Da Silva</span>
+                <span class="nome"></span>
                 <h3>E-mail :</h3>
-                <span class="email">exemplo@exemplo.com</span>
+                <span class="email"></span>
             </span>
 
         </div>
@@ -74,6 +73,7 @@
 
     <script src="./exibe-info.js"></script>
     <script src="../telaLoginFacul/registro-login.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar-header">
             <div class="icon-and-text-header">
-                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" height="80px" width="auto"></a>                
+                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" height="80px"
+                        width="auto"></a>
             </div>
             <div class="content-header">
                 <ul>
@@ -22,23 +25,31 @@
                             <li><a href="/codigo-fonte/Calculadoras/calc-cal.html">Gasto Calórico Diário</a></li>
                         </ul>
                     </li>
-                    
-                    <li><a href="/codigo-fonte/GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
-                </ul>     
-                <div class="button-profile-and-search-input">
-                    
-                    <button class="button-profile">
-                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html"><img src="imgs/user-interface 1.png"></a>
-                    </button>
-                </div> 
-            </div>          
-        </nav>   
-    </header> 
 
-    <main> 
+                    <li><a href="/codigo-fonte/GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
+                </ul>
+                <div class="button-profile-and-search-input">
+                    <button class="button-profile" id="profileButton">
+                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html" class="link-login" id="loginLink">Login</a>
+                        <img src="imgs/user-interface 1.png" alt="User Interface" id="userImageLink">
+                        <nav>
+                            <ul class="menu-user" id="dropdownMenu" style="display: none">
+                                <li><a href="../codigo-fonte/TelaDadosUsers/TelaInfoUser.html">Meus Dados</a></li>
+                                <li><a href="../codigo-fonte/TelaDadosUsers/TelaFav.html">Favoritos</a></li>
+                                <li id="logoutButton"><a href="">Sair</a></li>
+                            </ul>
+                        </nav>
+                    </button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
         <div class="container-main-home">
-            <div class="content-text-button-home">             
-                <span>Crie sua dieta conosco Crie sua dieta conosco Crie asd sua dieta conosco</span>       
+            <div class="content-text-button-home">
+                <span>Crie sua dieta conosco Crie sua dieta conosco Crie asd sua dieta conosco</span>
                 <button>
                     <a href="/codigo-fonte/Gerar-Cardapio/gerar-cardapio.html">Gerar cardápio</a>
                 </button>
@@ -46,16 +57,22 @@
             <div class="content-first-section-img">
                 <img src="imgs/sopa.jpg">
             </div>
-        </div>    
+        </div>
         <div class="second-section-home">
             <div class="img-container-home-nutricionista">
                 <img src="imgs/Florence-dia-do-nutricionista.jpg">
             </div>
             <div class="content-nutricionista-home">
                 <h1>Informações sobre a <span class="laranja-nutricionista-span">página</span></h1>
-                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum</span>
             </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
+
 </html>
