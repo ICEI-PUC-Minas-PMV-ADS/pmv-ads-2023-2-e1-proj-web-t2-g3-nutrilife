@@ -9,69 +9,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/codigo-fonte/style.css">
     <link rel="stylesheet" href="/codigo-fonte/Calculadoras/stylecalc.css">
+    <script src="/codigo-fonte/Calculadoras/scriptscalc.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="navbar-header">
             <div class="icon-and-text-header">
-                <img src="/codigo-fonte/imgs/icon.png">
-                <h1>NutriLife</h1>
+                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" height="80px"
+                        width="auto"></a>
             </div>
             <div class="content-header">
                 <ul>
-                    <li><a>Calculadora<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
-                    <li><a>Alimentos<img src="/codigo-fonte/imgs/down-arrow 2.png"></a></li>
-                </ul>     
+                    <li><a href="#">Calculadoras</a>
+                        <ul>
+                            <li><a href="/codigo-fonte/Calculadoras/calc-imc.html">Índice de Massa Corporal</a></li>
+                            <li><a href="/codigo-fonte/Calculadoras/calc-cal.html">Gasto Calórico Diário</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/codigo-fonte/GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
+                </ul>
                 <div class="button-profile-and-search-input">
-                    
-                    <button class="button-profile">
-                        <img src="/codigo-fonte/imgs/user-interface 1.png">
+                    <button class="button-profile" id="profileButton">
+                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html" class="link-login" id="loginLink">Login</a>
+                        <img src="/codigo-fonte/imgs/user-interface 1.png" alt="User Interface" id="userImageLink">
+                        <nav>
+                            <ul class="menu-user" id="dropdownMenu" style="display: none">
+                                <li><a href="/codigo-fonte/TelaDadosUsers/TelaInfoUser.html">Meus Dados</a></li>
+                                <li><a href="/codigo-fonte/TelaDadosUsers/TelaFav.html">Favoritos</a></li>
+                                <li id="logoutButton"><a href="">Sair</a></li>
+                            </ul>
+                        </nav>
                     </button>
-                </div> 
-            </div>          
-        </nav>   
-    </header> 
+                </div>
+
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="titulo">
             <h1>Calculadora de <span class="titulo-destaque-laranja">IMC</span></h1>            
         </div>
         
         
-        <div class="container-calc-cal">
+        <div class="container-calc-imc">
             <h3>Preencha os dados abaixo para calcular o seu IMC (Índice de Massa Corporal):</h3>
-            <form action="register.php" method="get">
                 <div class="form-cal-1">
                     <div class="label-input-calc">
-                        <label for="altura">Altura (m)</label>
-                        <input type="text" name="altura">
+                        <label for="altura">Altura (cm)</label>
+                        <input type="text" name="altura" id="altura" placeholder="Exemplo: 175" oninput="validarNumero(this)" required>
                     </div>
                     <div class="label-input-calc">        
                         <label for="peso">Peso (kg)</label>
-                        <input type="text" name="peso">
-                    </div>
-                    <div class="label-input-calc">
-                        <label for="idade">Idade</label>
-                        <input type="text" name="idade">
-                        </select> 
-                    </div>     
+                        <input type="text" name="peso" id="peso" placeholder="Exemplo: 68,5" oninput="validarNumeroVirgula(this)" required>
+                    </div>                    
                 </div>      
             </form>
             <div class="botoes-calc-cal">
-                <div class="botao-fraco">
-                    <p>Limpar</p>
-                </div>
-                <div class="botao-destaque-padrao">
-                    <p>Calcular</p>
-                    <!-- <input type="submit" value="Calcular"> -->
-                </div>
+                <button id="botao-limpar">Limpar</button>
+                <button id="botao-calcular">Calcular</button>
+                <!-- <input type="submit" value="Calcular"> -->              
             </div>
         </div>
 
-        <div class="container-calc-cal-res">
+        <div id="container-calc-cal-res" class="hide" class="show">
             <h3>Resultado:</h3>
-            <p>O seu IMC é: _____</p>
-            <p>Esse valor corresponde à classificação de ___________, de acordo com a tabela abaixo:</p>
-            <div class="img-imc">
+            <p id="imc-numero">O seu IMC é: <span class="titulo-destaque-laranja"> </span></p>
+            <p id="imc-info">Esse valor corresponde à classificação: <span class="titulo-destaque-laranja"> </span></p>   
+            <h3>Tabela de referência:</h3>         
+            <div id="img-table">
                 <img src="/codigo-fonte/imgs/IMC_Laranja.png" alt="Tabela com classificão de IMC - índice de massa corporal" width="70%" height="70%">
             </div>
         </div>
@@ -79,7 +85,6 @@
         <div class="transicao-result"> 
             <h2>Algumas Dicas:</h2>
         </div>
-
         <div class="container-calc-cal-obj">
             <div class="objetivo">
                 <p>O <u>Índice de Massa Corporal</u> é <strong>apenas um indicador</strong>  do peso ideal e do risco de aparecimento de doenças crônicas, porém, não leva em consideração a <strong>composição corporal</strong> (relação músculos X percentual de gordura)</p>
