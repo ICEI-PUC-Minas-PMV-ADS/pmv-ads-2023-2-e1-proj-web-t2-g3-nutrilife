@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     logoutButton.addEventListener("click", function () {
         // Limpe os dados do usuário logado
         localStorage.removeItem("usuarioLogado");
+        localStorage.removeItem("resultadosIMC"); // Remova os resultados do IMC específicos do usuário logado
+    
 
         // Redirecione para a página de login ou outra página apropriada
         window.location.href = '/codigo-fonte/telaLoginFacul/TelaLogin.html';

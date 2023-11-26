@@ -127,25 +127,24 @@ calcular.addEventListener("click", (e) => {
 
         // Crie um objeto contendo o resultado do IMC e as informações do usuário
         const resultadoIMC = {
-            usuario: usuarioLogado,
             imc: imc,
             info: info,
             dataHora: formatarDataHora(new Date()), // Use a função para formatar data e hora
         };
 
-        // Obtenha os resultados anteriores (se houver) do localStorage
+        // Obtenha os resultados anteriores específicos do usuário logado do localStorage
         const resultadosAnteriores = JSON.parse(localStorage.getItem("resultadosIMC")) || [];
+        const resultadosUsuario = resultadosAnteriores.filter(resultado => resultado.usuario.email === usuarioLogado.email);
 
-        // Adicione o novo resultado ao array de resultados
-        resultadosAnteriores.push(resultadoIMC);
+        // Adicione o novo resultado ao array de resultados do usuário logado
+        resultadosUsuario.push(resultadoIMC);
 
         console.log(resultadoIMC);
 
-        // Armazene o array atualizado no localStorage
-        localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores));
+        // Atualize os resultados do usuário logado no localStorage
+        localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores.concat(resultadosUsuario)));
 
-        console.log(resultadosAnteriores);
-
+        console.log(resultadosAnteriores.concat(resultadosUsuario));
         
     } else {
         alert("Usuário não logado. Faça o login para calcular o IMC.");
