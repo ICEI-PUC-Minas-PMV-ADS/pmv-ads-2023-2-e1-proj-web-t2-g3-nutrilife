@@ -90,33 +90,67 @@ return imc;
 
 }
 
+// Função para formatar a hora no formato "HH:mm"
+function formatarDataHora(data) {
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+    return new Intl.DateTimeFormat('pt-BR', options).format(data);
+}
+
+
 
 calcular.addEventListener("click", (e) => {
     e.preventDefault();
 
+    const peso = +pesoInput.value.replace(",", ".");
+    const altura = (+alturaInput.value.replace(",", ".")) / 100;
+
+    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+    if (usuarioLogado) {
+        const imc = calcularIMC(peso, altura);
+        let info;
+
+        dados.forEach((item) => {
+            if (imc >= item.min && imc <= item.max) {
+                info = item.info;
+            }
+        });
+
+        console.log(info);
+
+        if (!info) return;
+
+        imcValor.innerText = imc;
+        imcMsg.innerText = info;
+
+        mostrarResult();
+
+        // Crie um objeto contendo o resultado do IMC e as informações do usuário
+        const resultadoIMC = {
+            usuario: usuarioLogado,
+            imc: imc,
+            info: info,
+            dataHora: formatarDataHora(new Date()), // Use a função para formatar data e hora
+        };
+
+        // Obtenha os resultados anteriores (se houver) do localStorage
+        const resultadosAnteriores = JSON.parse(localStorage.getItem("resultadosIMC")) || [];
+
+        // Adicione o novo resultado ao array de resultados
+        resultadosAnteriores.push(resultadoIMC);
+
+        console.log(resultadoIMC);
+
+        // Armazene o array atualizado no localStorage
+        localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores));
+
+        console.log(resultadosAnteriores);
+
+        
+    } else {
+        alert("Usuário não logado. Faça o login para calcular o IMC.");
+    }
+
     
-    const peso = +pesoInput.value.replace(",",".")
-    const altura = (+alturaInput.value.replace(",","."))/100    
-
-    const imc = calcularIMC(peso, altura);
-
-    let info
-
-    dados.forEach((item) => {
-        if (imc >= item.min && imc <=item.max) {
-            info = item.info;
-        }
-    })
-
-    console.log(info)
-
-    if (!info) return;
-
-    imcValor.innerText = imc;
-    imcMsg.innerText = info;
-
-    mostrarResult ();
-
 });
-
 

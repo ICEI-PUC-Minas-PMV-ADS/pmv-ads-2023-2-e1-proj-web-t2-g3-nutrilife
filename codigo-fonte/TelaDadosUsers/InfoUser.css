@@ -51,9 +51,15 @@ ul {
 /* ############## FIM ############# */
 
 /* inicio onde fica os dados do usuario */
+.meusDados__DadosNumericos{
+    margin-bottom: 1rem;
+}
+
+
 .Container__meusDados {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .meusDados__titulo {
@@ -62,11 +68,12 @@ ul {
     font-weight: 1000;
 }
 
-.meusDados__DadosNumericos {
+.meusDados__IMC {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
+    
 }
 
 .meusDados__IMC,
@@ -84,6 +91,8 @@ ul {
     text-align: center;
     line-height: 2;
 }
+
+
 
 
 @media screen and (min-width: 564px) {
