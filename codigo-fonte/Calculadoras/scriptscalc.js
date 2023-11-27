@@ -90,33 +90,66 @@ return imc;
 
 }
 
+// Função para formatar a hora no formato "HH:mm"
+function formatarDataHora(data) {
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+    return new Intl.DateTimeFormat('pt-BR', options).format(data);
+}
+
+
 
 calcular.addEventListener("click", (e) => {
     e.preventDefault();
 
+    const peso = +pesoInput.value.replace(",", ".");
+    const altura = (+alturaInput.value.replace(",", ".")) / 100;
+
+    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+    if (usuarioLogado) {
+        const imc = calcularIMC(peso, altura);
+        let info;
+
+        dados.forEach((item) => {
+            if (imc >= item.min && imc <= item.max) {
+                info = item.info;
+            }
+        });
+
+        console.log(info);
+
+        if (!info) return;
+
+        imcValor.innerText = imc;
+        imcMsg.innerText = info;
+
+        mostrarResult();
+
+        // Crie um objeto contendo o resultado do IMC e as informações do usuário
+        const resultadoIMC = {
+            imc: imc,
+            info: info,
+            dataHora: formatarDataHora(new Date()), // Use a função para formatar data e hora
+        };
+
+        // Obtenha os resultados anteriores específicos do usuário logado do localStorage
+        const resultadosAnteriores = JSON.parse(localStorage.getItem("resultadosIMC")) || [];
+        const resultadosUsuario = resultadosAnteriores.filter(resultado => resultado.usuario.email === usuarioLogado.email);
+
+        // Adicione o novo resultado ao array de resultados do usuário logado
+        resultadosUsuario.push(resultadoIMC);
+
+        console.log(resultadoIMC);
+
+        // Atualize os resultados do usuário logado no localStorage
+        localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores.concat(resultadosUsuario)));
+
+        console.log(resultadosAnteriores.concat(resultadosUsuario));
+        
+    } else {
+        alert("Usuário não logado. Faça o login para calcular o IMC.");
+    }
+
     
-    const peso = +pesoInput.value.replace(",",".")
-    const altura = (+alturaInput.value.replace(",","."))/100    
-
-    const imc = calcularIMC(peso, altura);
-
-    let info
-
-    dados.forEach((item) => {
-        if (imc >= item.min && imc <=item.max) {
-            info = item.info;
-        }
-    })
-
-    console.log(info)
-
-    if (!info) return;
-
-    imcValor.innerText = imc;
-    imcMsg.innerText = info;
-
-    mostrarResult ();
-
 });
-
 
