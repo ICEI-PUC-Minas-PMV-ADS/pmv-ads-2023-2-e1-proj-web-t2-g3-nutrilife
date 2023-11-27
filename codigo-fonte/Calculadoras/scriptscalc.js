@@ -64,29 +64,29 @@ function validarNumero(input) {
 
 //Função Limpar Calculadora
 
-function limparInputs () {
+function limparInputs() {
     alturaInput.value = "";
     pesoInput.value = "";
 
 }
 
 limpar.addEventListener("click", function (e) {
-        e.preventDefault();
-        limparInputs();
+    e.preventDefault();
+    limparInputs();
 
-    });
+});
 
 
 //Função Calcular
 
-function mostrarResult () {
-    imcResult.classList.replace("hide","show");
+function mostrarResult() {
+    imcResult.classList.replace("hide", "show");
 }
 
 function calcularIMC(peso, altura) {
 
-const imc = (peso / (altura * altura)).toFixed(1);
-return imc; 
+    const imc = (peso / (altura * altura)).toFixed(1);
+    return imc;
 
 }
 
@@ -104,9 +104,7 @@ calcular.addEventListener("click", (e) => {
     const peso = +pesoInput.value.replace(",", ".");
     const altura = (+alturaInput.value.replace(",", ".")) / 100;
 
-    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
-
-    if (usuarioLogado) {
+    function calcularIMCeAtualizarResultados(peso, altura, usuarioLogado) {
         const imc = calcularIMC(peso, altura);
         let info;
 
@@ -114,9 +112,7 @@ calcular.addEventListener("click", (e) => {
             if (imc >= item.min && imc <= item.max) {
                 info = item.info;
             }
-        });
-
-        console.log(info);
+        }); 
 
         if (!info) return;
 
@@ -125,31 +121,41 @@ calcular.addEventListener("click", (e) => {
 
         mostrarResult();
 
-        // Crie um objeto contendo o resultado do IMC e as informações do usuário
         const resultadoIMC = {
             imc: imc,
             info: info,
             dataHora: formatarDataHora(new Date()), // Use a função para formatar data e hora
         };
 
-        // Obtenha os resultados anteriores específicos do usuário logado do localStorage
         const resultadosAnteriores = JSON.parse(localStorage.getItem("resultadosIMC")) || [];
-        const resultadosUsuario = resultadosAnteriores.filter(resultado => resultado.usuario.email === usuarioLogado.email);
 
-        // Adicione o novo resultado ao array de resultados do usuário logado
-        resultadosUsuario.push(resultadoIMC);
+        if (usuarioLogado) {
+            // Se o usuário estiver logado, atualize os resultados específicos dele
+            const resultadosUsuario = resultadosAnteriores.filter(resultado => resultado.usuario.email === usuarioLogado.email);
+            
+            resultadosUsuario.push(resultadoIMC);
+            
+            localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores.concat(resultadosUsuario)));
+        } else {
+            // Se o usuário não estiver logado, atualize os resultados gerais
+            resultadosAnteriores.push(resultadoIMC);
 
-        console.log(resultadoIMC);
-
-        // Atualize os resultados do usuário logado no localStorage
-        localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores.concat(resultadosUsuario)));
-
-        console.log(resultadosAnteriores.concat(resultadosUsuario));
-        
-    } else {
-        alert("Usuário não logado. Faça o login para calcular o IMC.");
+            localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores));
+        }
     }
 
-    
+    // Verifique se o usuário está logado
+    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+    if (usuarioLogado) {
+        // Usuário logado
+        calcularIMCeAtualizarResultados(peso, altura, usuarioLogado);
+    } else {
+        // Usuário não logado
+        calcularIMCeAtualizarResultados(peso, altura, null);
+    }
+
+
+
 });
 

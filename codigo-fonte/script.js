@@ -2,7 +2,6 @@
 // Recupere o estado do usuário logado
 const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 
-console.log(usuarioLogado);
 
 // Verifique se o usuário está logado
 const isUsuarioLogado = usuarioLogado != null;
@@ -16,7 +15,6 @@ const userIcon = document.getElementById('userImageLink');
 // Obtenha o menu dropdown
 const dropdownMenu = document.getElementById('dropdownMenu');
 
-console.log(isUsuarioLogado);
 
 if (isUsuarioLogado) {
     // Se o usuário estiver logado, oculte o botão de login e mostre o ícone do usuário

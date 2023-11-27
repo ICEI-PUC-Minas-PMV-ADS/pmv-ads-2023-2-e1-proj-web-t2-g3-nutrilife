@@ -36,7 +36,7 @@ formularioRegistro.addEventListener("submit", function (event) {
         localStorage.setItem("usuariosRegistrados", JSON.stringify(usuariosRegistrados));
 
         alert("Registro realizado com sucesso");
-        console.log(novoUsuario);
+        
 
         // Limpa o formulário
         formularioRegistro.reset();
@@ -60,8 +60,6 @@ formularioLogin.addEventListener("submit", function (event) {
 
     if (usuarioCorrespondente) {
         alert("Login bem-sucedido!");
-        console.log("Usuário logado:", usuarioCorrespondente);
-
         // Defina o usuário logado antes de redirecionar
         localStorage.setItem("usuarioLogado", JSON.stringify(usuarioCorrespondente));
 
