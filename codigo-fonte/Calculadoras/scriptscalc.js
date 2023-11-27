@@ -147,7 +147,23 @@ calcular.addEventListener("click", (e) => {
         console.log(resultadosAnteriores.concat(resultadosUsuario));
         
     } else {
-        alert("Usuário não logado. Faça o login para calcular o IMC.");
+        const imc = calcularIMC(peso, altura);
+        let info;
+
+        dados.forEach((item) => {
+            if (imc >= item.min && imc <= item.max) {
+                info = item.info;
+            }
+        });
+
+        console.log(info);
+
+        if (!info) return;
+
+        imcValor.innerText = imc;
+        imcMsg.innerText = info;
+
+        mostrarResult();
     }
 
     
