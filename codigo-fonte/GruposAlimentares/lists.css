@@ -26,13 +26,6 @@ main {
     width: 100%;
 }
 
-.content-test {
-    height: 250px;
-    width: 200px;
-    background-color: #f7ddbb;
-    border-radius: 10px;
-}
-
 
 .caixa-imagem img {
     width: 95%;
@@ -153,49 +146,36 @@ main {
 
 
 .content-test {
-    display: flex;
+    display: inline-block;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
     justify-content: center;
-    /* Centraliza horizontalmente */
-    align-items: center;
-    /* Centraliza verticalmente */
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.content-test {
+    align-items: center;/* Centraliza horizontalmente */
+    place-items: center; /* Centraliza verticalmente */
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
     margin: 15px;
     text-align: center;
-    display: inline-block;
-    transition: transform 0.2s;
-    /* Adicione uma transição suave na propriedade 'transform' */
+    transition: transform 0.2s; /* Adicione uma transição suave na propriedade 'transform' */
     background-color: white;
-
-
-}
-
-.content-test {
     max-width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-}
-
-.content-text {
     padding: 10px;
+    color: black;
+
 }
 
-.content-test {
-    text-decoration: none;
-    color: black;
-}
 
 .content-test:hover {
     transform: scale(1.1);
     /* Aumente a escala em 10% quando o mouse passa por cima */
+}
+
+.content-test a{
+    text-decoration: none;
 }
 
 .thumbs-video {
