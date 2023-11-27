@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/codigo-fonte/style.css">
     <link rel="stylesheet" href="/codigo-fonte/Calculadoras/stylecalc.css">
+    <script src="/codigo-fonte/Calculadoras/scriptscalccal.js" defer></script>
 </head>
 <body>
 <header>
@@ -41,34 +42,31 @@
                         </nav>
                     </button>
                 </div>
-
             </div>
         </nav>
     </header>
+ 
     <main>
         <div class="titulo">
             <h1>Calculadora de <span class="titulo-destaque-laranja">Gasto Calórico</span></h1>            
-        </div>
-        
-        
+        </div>       
         <div class="container-calc-cal">
             <h3>Preencha os dados abaixo para calcular o seu gasto calórico diário:</h3>
             <form action="register.php" method="get">
                 <div class="form-cal-1">
                     <div class="label-input-calc">
                         <label for="altura">Altura (cm)</label>
-                        <input type="text" name="altura">
+                        <input type="text" name="altura" id="altura" placeholder="Exemplo: 175" oninput="validarNumero(this)" required>
                     </div>
                     <div class="label-input-calc">        
                         <label for="peso">Peso (kg)</label>
-                        <input type="text" name="peso">
+                        <input type="text" name="peso"id="peso" placeholder="Exemplo: 68,5" oninput="validarNumeroVirgula(this)" required>
                     </div>
                     <div class="label-input-calc">
                         <label for="sexo">Sexo</label>
-                        <select name="sexo">
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="nao-informar">Prefiro não informar</option>
+                        <select name="sexo" id="sexo" required>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>                            
                         </select> 
                     </div>     
                 </div>      
@@ -76,28 +74,30 @@
                 <div class="form-cal-2">
                     <div class="label-input-calc">
                         <label for="idade">Idade</label>
-                        <input type="text" name="idade">
+                        <input type="text" name="idade" id="idade" placeholder="Exemplo: 28" oninput="validarNumero(this)" required>
                     </div>
                     <div class="label-input-calc">
                         <label for="atividade">Nível de Atividade Física</label>
-                        <input type="text" name="atividade">
+                        <select name="atividade" id="atividade" required>
+                            <option value="Sedentário">Sedentário</option>
+                            <option value="Pouco ativo">Pouco ativo</option>                            
+                            <option value="Ativo">Ativo</option>                            
+                            <option value="Muito ativo">Muito ativo</option>                 
+                        </select>  
                     </div>
                 </div>
             </form>
             <div class="botoes-calc-cal">
-                <div class="botao-fraco">
-                    <p>Limpar</p>
-                </div>
-                <div class="botao-destaque-padrao">
-                    <p>Calcular</p>
-                    <!-- <input type="submit" value="Calcular"> -->
-                </div>
+                <button id="botao-limpar">Limpar</button>
+                <button id="botao-calcular" onclick="calcularGasto()">Calcular</button>
             </div>
         </div>
 
+        
+
         <div class="container-calc-cal-res">
             <h3>Resultado:</h3>
-            <p>O seu gasto calórico basal é de: _____ kCal</p>
+            <p id="output"> <span class="titulo-destaque-laranja"> </span> kcal</p>
             <p>Esse valor também é chamado de taxa metabólica basal e servirá como referência para a construção do seu plano alimentar</p>
         </div>
 
@@ -118,7 +118,7 @@
                     </div>
                 </form>
             </div>
-            <p>Voce deverá consumir ____ Kcal por dia. Use o nosso <a href="/codigo-fonte/gerar-cardapio.html">Gerador de Cardápio</a> para auxiliá-lo</p>
+            <p>Voce deverá consumir ____ Kcal por dia. Use o nosso <a href="/codigo-fonte/Gerar-Cardapio/gerar-cardapio.html">Gerador de Cardápio</a> para auxiliá-lo</p>
 
         </div>
         
