@@ -4,19 +4,22 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+### RF-01 Tela de Cadastro
 
-[Adicione imagem da funcionalidade/tela]
+
+![Tela de Registro](./img/telaRegistroFinal.PNG)
 
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Login” e em seguida clicando em "Aqui" que fica destacado na tela de login. As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+[registro-login.js](../codigo-fonte/telaLoginFacul/registro-login.js)
+[styles.css](../codigo-fonte/telaLoginFacul/style.css)
+[TelaLogin.html](../codigo-fonte/telaLoginFacul/TelaLogin.html)
 
 
 #### Estrutura de Dados
@@ -31,7 +34,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Abraão Vicentini.
 
 
 

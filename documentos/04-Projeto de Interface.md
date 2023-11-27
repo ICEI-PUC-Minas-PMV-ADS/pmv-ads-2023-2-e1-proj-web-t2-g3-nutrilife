@@ -3,7 +3,7 @@
 
 ## User Flow
 
-O fluxograma apresentado na figura Abaixo mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue. Para visualizar o protótipo interativo, acesse o <a href="https://www.figma.com/file/Sie5hM3txB0TXzpLW4JtZQ/index?type=design&node-id=0%3A1&mode=design&t=KNFo5Fpas2vKOO5h-1">ambiente FIgma do projeto</a>.
+O fluxograma apresentado na figura Abaixo mostra o fluxo de interação do usuário pelas telas do sistema. Cada uma das telas deste fluxo é detalhada na seção de Protótipo de baixa fidelidade que se segue. Para visualizar o protótipo interativo, acesse o <a href="https://www.figma.com/file/Sie5hM3txB0TXzpLW4JtZQ/index?type=design&node-id=0%3A1&mode=design&t=KNFo5Fpas2vKOO5h-1">ambiente Figma do projeto</a>.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/assets/144973239/f728e758-af0b-4806-a1c2-4b0b432a390a)
  

@@ -52,16 +52,13 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Requisitos Funcionais
 
-|  --ID---| Descrição                | Prioridade |
+|--------------ID---| Descrição                | Prioridade |
 |----------|---------------------------------|----|
 | RF-01    | A aplicação deve permitir que os usuários se cadastrem na plataforma fornecendo informações básicas, como nome, e-mail e senha.| ALTA | 
 | RF-02    | A aplicação deve possibilitar que os usuários informem dados como altura e peso para efetuar cálculos de IMC e gasto calórico diário | ALTA |
 | RF-03    | A aplicação deve permitir aos usuarios entrar em contato com um nutricionista | MEDIA   |
-| RF-04    | A aplicação deve apresentar itens de alimentação para criação de cardápio diário | MEDIA   |
-| RF-05    | A aplicação deve permitir aos perfis de usuário realizarem login | ALTA   |
-| RF-06    | A aplicação deve disponibilizar opção de pesquisa | MEDIA  |
-| RF-07    | A aplicação deve disponibilizar informações nutricionais sobre grupos alimentares e receitas correspondentes  | ALTA  |
-| RF-08    | A aplicação deve permitir que os usuários favoritem receitas, que serão mostradas no perfil de usuário | MEDIA |
+| RF-04    | A aplicação deve permitir aos perfis de usuário realizarem login | ALTA   |
+| RF-05    | A aplicação deve disponibilizar informações nutricionais sobre grupos alimentares e receitas correspondentes  | ALTA  |
 
 
 

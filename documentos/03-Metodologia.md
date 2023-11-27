@@ -12,10 +12,10 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 
 
-- Scrum Master: Camila Pereira de Almeida.
-- Product Owner: Henrique Amaral de Moura.
-- Equipe de Desenvolvimento: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Camila Pereira de Almeida, Flávio Vizeu Stellet Soares, Gabriel Cardoso e Henrique Amaral de Moura.
-- Equipe de Design: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Camila Pereira de Almeida, Flávio Vizeu Stellet Soares, Gabriel Cardoso e Henrique Amaral de Moura.
+- Scrum Master: Abraão Vinicius Vicentini.
+- Product Owner: Flavio Vizeu Stellet Soares.
+- Equipe de Desenvolvimento: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Flávio Vizeu Stellet Soares, Gabriel Cardoso.
+- Equipe de Design: Abraão Vinicius Vicentini, Breno Eller Andrade Machado, Flávio Vizeu Stellet Soares, Gabriel Cardoso.
 
 ### Processo
 
