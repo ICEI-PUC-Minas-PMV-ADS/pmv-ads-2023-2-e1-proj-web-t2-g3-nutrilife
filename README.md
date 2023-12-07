@@ -14,7 +14,6 @@ A finalidade do projeto é entregar uma opção gratuita de consulta e acompanha
 
 * Abraão Vinicius Vicentini
 * Breno Eller Andrade Machado
-* Camila Pereira de Almeida
 * Flávio Vizeu Stellet Soares
 * Gabriel Cardoso
 
