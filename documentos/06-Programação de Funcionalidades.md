@@ -2,8 +2,6 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
-
 ### RF-01 Tela de Cadastro
 
 
@@ -12,7 +10,40 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 #### Requisito atendido
 
+A aplicação deve permitir que os usuários se cadastrem na plataforma fornecendo informações básicas, como nome, e-mail e senha.
+
+
+#### Artefatos da funcionalidade
+<ul>
+<li>registro-login.js
+<li>styles.css</li>
+<li>TelaLogin.html</li>
+</ul>
+
+
+#### Estrutura de Dados
+
+[TelaLogin.html](../codigo-fonte/telaLoginFacul/TelaLogin.html)
+
+
+#### Instruções de acesso
+
 O acesso a tela de cadastro poderá ser feito através da opção de menu “Login” e em seguida clicando em "Aqui" que fica destacado na tela de login. As estruturas de dados foram baseadas em HTML, CSS e JS.
+
+
+#### Responsável
+
+Abraão Vicentini.
+<hr></hr>
+
+### RF-04 e RF-01 Tela de login
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t2-g3-nutrilife/assets/114082138/8380d794-4309-4cac-9be3-3a738da07d19)
+
+
+#### Requisito atendido
+deve permitir que os usuários se cadastrem na plataforma fornecendo informações básicas, como nome, e-mail e senha;
+deve permitir aos perfis de usuário realizarem login;
 
 
 #### Artefatos da funcionalidade
@@ -24,24 +55,16 @@ O acesso a tela de cadastro poderá ser feito através da opção de menu “Log
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+[TelaLogin.html](../codigo-fonte/telaLoginFacul/TelaLogin.html)
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
-
+O acesso a tela de cadastro poderá ser feito através da opção de menu “Login” 
 
 #### Responsável
 
 Abraão Vicentini.
 
 
-
-
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
