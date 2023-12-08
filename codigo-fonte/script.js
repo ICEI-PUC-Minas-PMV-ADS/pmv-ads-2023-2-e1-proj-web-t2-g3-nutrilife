@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Limpe os dados do usuário logado
         localStorage.removeItem("usuarioLogado");
         localStorage.removeItem("resultadosIMC"); // Remova os resultados do IMC específicos do usuário logado
+        localStorage.removeItem("gastoTotal");//Limpa a informação da calculadora que fica armazenada no Local Storage
     
 
         // Redirecione para a página de login ou outra página apropriada

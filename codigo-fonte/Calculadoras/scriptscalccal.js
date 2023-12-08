@@ -55,44 +55,45 @@ function calcularGasto() {
 }
 
 function calcularGastoCalorico(peso, altura, idade, sexo, atividade) {
+    let gasto;
 
-let gasto;
+    if (sexo === "Masculino") {
+        gasto = (13.8 * peso) + (5 * altura) - (6.8 * idade) + 66;
+    } else if (sexo === "Feminino") {
+        gasto = (9.6 * peso) + (1.9 * altura) - (4.7 * idade) + 655;
+    } else {
+        console.error('Sexo inválido. Escolha entre "Masculino" ou "Feminino".');
+        return null;
+    }
 
-if (sexo === "Masculino") {
-    gasto = (13.8 * peso) + (5 * altura) - (6.8 * idade) + 66;
-} else if (sexo === "Feminino") {
-    gasto = (9.6 * peso) + (1.9 * altura) - (4.7 * idade) + 655;
-} 
+    let gastoTotal;
 
-let gastoTotal;
-
-switch (atividade) {
-    case "Sedentário":
-        gastoTotal = gasto * 1.2;
-        break;
-    case "Pouco ativo":
-        gastoTotal = gasto * 1.375;
-        break;
-    case "Ativo":
-        gastoTotal = gasto * 1.55;
-        break;
-    case 'ativo':
-        gastoTotal = gasto * 1.725;
-        break;
-    case "Muito ativo":
-        gastoTotal = gasto * 1.9;
-        break;
-    default:
-            console.error('Atividade inválida. Escolha entre "sedentario", "leve", "moderado", "ativo" ou "muitoAtivo".');
+    switch (atividade) {
+        case "Sedentário":
+            gastoTotal = gasto * 1.2;
+            break;
+        case "Pouco ativo":
+            gastoTotal = gasto * 1.375;
+            break;
+        case "Ativo":
+            gastoTotal = gasto * 1.55;
+            break;
+        case 'ativo':
+            gastoTotal = gasto * 1.725;
+            break;
+        case "Muito ativo":
+            gastoTotal = gasto * 1.9;
+            break;
+        default:
+            console.error('Atividade inválida. Escolha entre "Sedentário", "Pouco ativo", "Ativo", "ativo" ou "Muito ativo".');
             return null;
+    }
+
+    // Armazenar gastoTotal no localStorage
+    localStorage.setItem("gastoTotal", gastoTotal);
+
+    return gastoTotal;
 }
-
-
-return gastoTotal;
-
-
-}     
-
 
 
 
