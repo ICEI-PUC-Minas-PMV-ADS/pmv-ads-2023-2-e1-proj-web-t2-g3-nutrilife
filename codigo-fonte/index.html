@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>NutriLife</title>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,7 +32,8 @@
                 </ul>
                 <div class="button-profile-and-search-input">
                     <button class="button-profile" id="profileButton">
-                        <a href="../codigo-fonte/telaLoginFacul/TelaLogin.html" class="link-login" id="loginLink">Login</a>
+                        <a href="../codigo-fonte/telaLoginFacul/TelaLogin.html" class="link-login"
+                            id="loginLink">Login</a>
                         <img src="../codigo-fonte/imgs/user-interface 1.png" alt="User Interface" id="userImageLink">
                         <nav>
                             <ul class="menu-user" id="dropdownMenu" style="display: none">
@@ -46,32 +49,124 @@
         </nav>
     </header>
 
-    <main>
-        <div class="container-main-home">
-            <div class="content-text-button-home">
-                <span>Crie sua dieta conosco Crie sua dieta conosco Crie asd sua dieta conosco</span>
-                <button>
-                    <a href="../codigo-fonte/Gerar-Cardapio/gerar-cardapio.html">Gerar cardápio</a>
-                </button>
-            </div>
-            <div class="content-first-section-img">
-                <img src="imgs/sopa.jpg">
+    <main class="containerPrincipal">
+
+        <h1 class="boasVindas">Bem-vindo ao Blog <p class="boasVindasLaranja">NutriLife!</p>
+        </h1>
+        <div class="containerCarousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active h-100"
+                        style="background: url('./imgs/imagemCarrosel1.png') center/contain no-repeat;">
+                    </div>
+                    <div class="carousel-item h-100"
+                        style="background: url('./imgs/imagemCarrosel2.png') center/contain no-repeat;">
+                    </div>
+                    <div class="carousel-item h-100"
+                        style="background: url('./imgs/imagemCarrosel3.png') center/contain no-repeat;">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px"
+                        fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" />
+                    </svg> <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px"
+                        fill="#000000">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                    </svg>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
         </div>
-        <div class="second-section-home">
-            <div class="img-container-home-nutricionista">
-                <img src="imgs/Florence-dia-do-nutricionista.jpg">
-            </div>
-            <div class="content-nutricionista-home">
-                <h1>Informações sobre a <span class="laranja-nutricionista-span">página</span></h1>
-                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum</span>
+
+        <!-- Destaque -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Descubra uma vida mais saudável através da nutrição!</h1>
+                <p class="lead">Dicas, receitas e informações para melhorar sua alimentação e qualidade de vida.</p>
             </div>
         </div>
+
+        <!-- Artigos Recentes -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Artigos Recentes</h2>
+                    <div class="card mb-4">
+                        <img src="imagem1.jpg" class="card-img-top" alt="Imagem do Artigo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Como manter uma dieta equilibrada</h5>
+                            <p class="card-text">Descubra dicas práticas para manter uma dieta balanceada no seu dia a
+                                dia.</p>
+                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <img src="imagem2.jpg" class="card-img-top" alt="Imagem do Artigo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Receita saudável: Salada de Quinoa</h5>
+                            <p class="card-text">Experimente esta deliciosa receita de salada nutritiva com quinoa.</p>
+                            <a href="#" class="btn btn-primary">Leia Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>Artigos Populares</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Benefícios das Frutas Vermelhas</li>
+                        <li class="list-group-item">Como manter uma alimentação saudável no trabalho</li>
+                        <li class="list-group-item">Receitas rápidas para o café da manhã</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+
+
+        <div class="paiCard">
+            <div class="card w-75">
+                <div class="card-header">
+                    Destaque
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Converse com a gente!</h5>
+                    <p class="card-text">
+                        Entre em contato com um profissional que gratuitamente pode retirar todas as suas duvidas sobre
+                        nutrição!!😁✨
+                    </p>
+                    <a href="https://api.whatsapp.com/send/?phone=55659805843&text&type=phone_number&app_absent=0"
+                        class="btn btn-primary">Conversar</a>
+                </div>
+            </div>
+        </div>
+
     </main>
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 NutriLife - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+
 </body>
+
 </html>

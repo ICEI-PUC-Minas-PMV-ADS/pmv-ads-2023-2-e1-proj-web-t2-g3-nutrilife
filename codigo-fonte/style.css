@@ -7,7 +7,6 @@
 
 :root {
     --cor-padrao-aplicacao: #FF9000;
-    /* Defina a variável --cor-destaque com a cor desejada */
     --cor-secundaria-fraco: #EDBF83;
     --cor-secundaria-media: #EDA84D;
 
@@ -155,101 +154,48 @@ header {
 
 /* FIM HEADER */
 
-.container-main-home {
+.containerPrincipal {
+    margin-top: 7rem;
+}
+
+.containerCarousel {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-bottom: 1rem;
+
+}
+
+.carousel-inner {
+    height: 40rem;
+}
+
+.card {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.paiCard {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 200px;
+    margin-bottom: 2%  ;
 }
 
-.content-text-button-home {
-    width: 350px;
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    z-index: 999;
-    margin: 20px;
-}
-
-.content-text-button-home span {
-    font-size: 30px;
-    line-height: 1.2;
-}
-
-.content-text-button-home button {
-    width: 200px;
-    height: 50px;
-    background-color: var(--cor-padrao-aplicacao);
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-
-}
-
-.content-text-button-home a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.img-container-home-nutricionista img {
-    -webkit-mask-image: linear-gradient(to left, transparent 0%, black 100%);
-    width: 70%;
-}
-
-.img-container-home-nutricionista {
-    width: 100%;
-}
-
-.second-section-home {
-    display: flex;
-    width: 100%;
-    position: relative;
-    margin-top: 200px;
-}
-
-.laranja-nutricionista-span {
-    color: var(--cor-padrao-aplicacao);
-}
-
-.content-nutricionista-home {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    bottom: 40%;
-    transform: translate(-10%, 50%);
-}
-
-.menu-user {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 1.5%;
-    width: 8%;
-    
-   
-}
-
-.menu-user li {
-    background-color: #FFF;
-    padding: 0.3rem;
+.boasVindas {
     text-align: center;
-   
+    margin: 2rem;
+    margin-top: 8rem;
 }
 
-.menu-user li a {
-    padding: 0;
-    
-
+.btn {
+    background-color: var(--cor-padrao-aplicacao);
+    border: 0;
 }
 
-.menu-user a:hover {
-    background-color:  var(--cor-padrao-aplicacao);
-    /* Adicione um efeito de destaque no hover */
-    color: white;
+.boasVindasLaranja {
+    color: var(--cor-padrao-aplicacao);
+    font-weight: bold;
 }
-
-
 
 @media (max-width: 1100px) {
     .content-first-section-img {
