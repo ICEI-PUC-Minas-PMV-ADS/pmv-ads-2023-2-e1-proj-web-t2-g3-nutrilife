@@ -1,4 +1,4 @@
-@import url("../style.css");
+/* @import url("../style.css"); */
 
 * {
     margin: 0;
@@ -51,7 +51,7 @@ ul {
 /* ############## FIM ############# */
 
 /* inicio onde fica os dados do usuario */
-.meusDados__DadosNumericos{
+.meusDados__DadosNumericos {
     margin-bottom: 1rem;
 }
 
@@ -73,7 +73,7 @@ ul {
     flex-direction: column;
     gap: 2rem;
     margin-bottom: 2rem;
-    
+
 }
 
 .meusDados__IMC,
@@ -92,6 +92,16 @@ ul {
     line-height: 2;
 }
 
+.menu-user {
+    top: 100%;
+    right: 2%;
+}
+
+.listaContent-Header {
+    right: 8%;
+    text-align: center;
+}
+
 
 
 
@@ -107,13 +117,13 @@ ul {
         /* align-items: center; */
     }
 
-    .container__dados__nav{
+    .container__dados__nav {
         align-self: flex-start;
         width: auto;
 
     }
 
-    .Container__meusDados{
+    .Container__meusDados {
         margin: auto;
     }
 
