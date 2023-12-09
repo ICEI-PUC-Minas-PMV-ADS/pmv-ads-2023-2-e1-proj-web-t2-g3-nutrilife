@@ -36,7 +36,8 @@ header {
 }
 
 .navbar-header ul {
-    display: flex;
+    position: absolute;
+     display: flex;
     gap: 20px;
     height: 100%;
     align-items: center;
@@ -49,6 +50,10 @@ header {
     gap: 20px;
 }
 
+.listaContent-Header {
+    right: 8%;
+    text-align: center;
+}
 .content-header ul li {
     list-style: none;
     position: relative;
@@ -112,31 +117,11 @@ header {
     width: 30%;
 }
 
-.search-box {
-    background-color: white;
-    border-radius: 20px;
-    height: 30px;
-    width: 250px;
-    padding-left: 15px;
-    display: flex;
-    align-items: center;
-    box-shadow: 2px 5px 4px -5px black;
-}
+.menu-user{
+     top: 100%;
+        right: 2%;
+    }
 
-.search-input {
-    border: none;
-    width: 90%;
-}
-
-.search-button {
-    border: none;
-    display: flex;
-    margin-right: 10px;
-}
-
-.search-button img {
-    height: 20px;
-}
 
 .button-profile {
     margin-right: 30px;

@@ -64,7 +64,7 @@ formularioLogin.addEventListener("submit", function (event) {
         localStorage.setItem("usuarioLogado", JSON.stringify(usuarioCorrespondente));
 
         // Redirecione para a página de dados do usuario
-        window.location.href = '../codigo-fonte/index.html';
+        window.location.href = '../index.html';
         
     } else {
         alert("Credenciais inválidas. Tente novamente.");
