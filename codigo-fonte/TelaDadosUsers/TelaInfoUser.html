@@ -14,30 +14,31 @@
     <header>
         <nav class="navbar-header">
             <div class="icon-and-text-header">
-                <a href="../index.html"><img src="../imgs/Logonew.png" height="80px"
+                <a href="/codigo-fonte/index.html"><img src="/codigo-fonte/imgs/Logonew.png" alt="logo da página Nutrilife" height="80px"
                         width="auto"></a>
             </div>
             <div class="content-header">
-                <ul>
+                <ul class="listaContent-Header">
                     <li><a href="#">Calculadoras</a>
                         <ul>
-                            <li><a href="../Calculadoras/calc-imc.html">Índice de Massa Corporal</a></li>
-                            <li><a href="../Calculadoras/calc-cal.html">Gasto Calórico Diário</a></li>
+                            <li><a href="/codigo-fonte/Calculadoras/calc-imc.html">Índice de Massa Corporal</a></li>
+                            <li><a href="/codigo-fonte/Calculadoras/calc-cal.html">Gasto Calórico Diário</a></li>
                         </ul>
                     </li>
 
-                    <li><a href="../GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
+                    <li><a href="/codigo-fonte/GruposAlimentares/gruposAlimentares.html">Alimentos</a></li>
                 </ul>
                 <div class="button-profile-and-search-input">
                     <button class="button-profile" id="profileButton">
-                        <a href="../telaLoginFacul/TelaLogin.html" class="link-login" id="loginLink">Login</a>
-                        <img src="imgs/user-interface 1.png" alt="User Interface" id="userImageLink">
-                        <nav>
-                            <ul class="menu-user" id="dropdownMenu" style="display: none">
-                                <li><a href="./TelaInfoUser.html">Meus Dados</a></li>
+                        <a href="/codigo-fonte/telaLoginFacul/TelaLogin.html" class="link-login"
+                            id="loginLink">Login</a>
+                        <li><img src="/codigo-fonte/imgs/user-interface 1.png" alt="User Interface" height="34px" id="userImageLink" style="position:absolute; right: 70px; top: 18px;">
+                            <ul class="menu-user">
+                                <li><a href="/codigo-fonte/TelaDadosUsers/TelaInfoUser.html">Meus Dados</a></li>
+                                <li><a href="/codigo-fonte/TelaDadosUsers/TelaFav.html">Favoritos</a></li>
                                 <li id="logoutButton"><a href="">Sair</a></li>
                             </ul>
-                        </nav>
+                        </li>
                     </button>
                 </div>
 
@@ -51,9 +52,18 @@
     </section>
     <p class="loginAlert"> Para acessar os dados por favor faça Login</p>
 
-    <script src="./exibe-info.js"></script>
-    <script src="../telaLoginFacul/registro-login.js"></script>
-    <script src="../script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <script src="/codigo-fonte/TelaDadosUsers/exibe-info.js"></script>
+    <script src="/codigo-fonte/telaLoginFacul/registro-login.js"></script>
+    <script src="/codigo-fonte/script.js"></script>
 
 </body>
 
