@@ -51,8 +51,10 @@ header {
 }
 
 .listaContent-Header {
-    right: 8%;
+    padding-right: 150px;
     text-align: center;
+    top: 1px;
+    
 }
 .content-header ul li {
     list-style: none;
