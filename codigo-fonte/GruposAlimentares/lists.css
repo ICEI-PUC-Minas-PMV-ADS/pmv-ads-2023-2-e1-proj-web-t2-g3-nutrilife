@@ -1,6 +1,3 @@
-main {
-    margin-top: 150px;
-}
 
 
 .first-conteiner {
@@ -23,9 +20,6 @@ main {
     padding-left: 50px;
 }
 
-
-
-
 .filho-2 {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +29,6 @@ main {
     width: 100%;
     justify-content: center;
 }
-
 
 .caixa-imagem img {
     width: 95%;
@@ -69,37 +62,30 @@ main {
     padding-right: 10px;
     padding-left: 50px;
     padding-top: 130px;
-    padding-bottom: 50px;
-
+    padding-bottom: 15px;
 }
-
 
 .caixa-de-texto-1 {
     display: flex;
     color: black;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
-    background-color: #f7ddbb;
-    font-size: 12px;
-    max-width: 60%;
-    border-radius: 15px;
-    margin-left: 30px;
-
-
+    background-color: #fef6ef;
+    border-radius: 20px;
+    font-size: 18px;
+    max-width: 60%;    
+    margin-left: 40px;
+    text-align: justify;
+    align-content: center;
 }
-
 
 .caixa-de-texto-2 {
     display: flex;
     color: black;
     font-weight: bold;
-    padding: 60px 50px 30px;
+    padding: 30px 50px 10px;
     display: flex;
-
-
 }
-
-
 
 .padroes-dos-icones {
 
@@ -110,6 +96,7 @@ main {
     gap: 20px;
     width: 100%;
     justify-items: center;
+    margin-bottom: 35px;
 
 }
 
@@ -137,6 +124,7 @@ main {
     align-items: top;
     color: rgb(27, 26, 26);
     font-weight: 100px;
+    font-size: 15px;
     justify-items: auto;
     padding: 12px;
     text-align: justify;
