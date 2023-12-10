@@ -112,7 +112,7 @@ calcular.addEventListener("click", (e) => {
             if (imc >= item.min && imc <= item.max) {
                 info = item.info;
             }
-        }); 
+        });
 
         if (!info) return;
 
@@ -129,17 +129,16 @@ calcular.addEventListener("click", (e) => {
 
         const resultadosAnteriores = JSON.parse(localStorage.getItem("resultadosIMC")) || [];
 
-        if (usuarioLogado) {
-            // Se o usuário estiver logado, atualize os resultados específicos dele
-            const resultadosUsuario = resultadosAnteriores.filter(resultado => resultado.usuario.email === usuarioLogado.email);
-            
-            resultadosUsuario.push(resultadoIMC);
-            
-            localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores.concat(resultadosUsuario)));
-        } else {
-            // Se o usuário não estiver logado, atualize os resultados gerais
-            resultadosAnteriores.push(resultadoIMC);
+        let resultadoExistente = false;
+        for (const resultado of resultadosAnteriores) {
+            if (resultado.usuario && resultado.usuario.email === usuarioLogado.email) {
+                resultadoExistente = true;
+                break;
+            }
+        }
 
+        if (!resultadoExistente) {
+            resultadosAnteriores.push(resultadoIMC);
             localStorage.setItem("resultadosIMC", JSON.stringify(resultadosAnteriores));
         }
     }
