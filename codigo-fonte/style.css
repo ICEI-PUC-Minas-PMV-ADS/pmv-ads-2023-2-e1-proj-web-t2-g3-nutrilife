@@ -37,7 +37,7 @@ header {
 
 .navbar-header ul {
     position: absolute;
-     display: flex;
+    display: flex;
     gap: 20px;
     height: 100%;
     align-items: center;
@@ -54,8 +54,9 @@ header {
     right: 155px;
     text-align: center;
     top: 1px;
-    
+
 }
+
 .content-header ul li {
     list-style: none;
     position: relative;
@@ -123,7 +124,7 @@ header {
     right: 10px;
     text-align: center;
     top: 53px;
-    }
+}
 
 .button-profile-and-search-input button button li {
     list-style: none;
@@ -148,7 +149,7 @@ header {
     list-style: none;
 }
 
-.button-profile-and-search-input button li ul{
+.button-profile-and-search-input button li ul {
     display: none;
     position: absolute;
 }
@@ -176,7 +177,7 @@ header {
     display: flex;
     cursor: pointer;
     margin-top: 13px;
-    
+
 }
 
 .button-profile-and-search-input {
@@ -184,12 +185,12 @@ header {
     position: absolute;
     align-items: center;
     right: 30px;
-    
+
 }
 
 .button-profile a:hover {
     text-decoration: none;
-    color:#FFF;
+    color: #FFF;
 }
 
 /* FIM HEADER */
@@ -217,7 +218,7 @@ header {
 .paiCard {
     display: flex;
     justify-content: center;
-    margin-bottom: 2%  ;
+    margin-bottom: 2%;
 }
 
 .boasVindas {
@@ -234,6 +235,18 @@ header {
 .boasVindasLaranja {
     color: var(--cor-padrao-aplicacao);
     font-weight: bold;
+}
+
+.imagemCarrosselUm {
+    background: url('./imgs/imagemCarrosel1.png') center/contain no-repeat;
+}
+
+.imagemCarrosselDois {
+    background: url('./imgs/imagemCarrosel2.png') center/contain no-repeat;
+}
+
+.imagemCarrosselTres {
+    background: url('./imgs/imagemCarrosel3.png') center/contain no-repeat;
 }
 
 @media (max-width: 1100px) {
