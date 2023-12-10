@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/codigo-fonte/style.css">
     <link rel="stylesheet" href="/codigo-fonte/Calculadoras/stylecalc.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="/codigo-fonte/Calculadoras/scriptscalccal.js" defer></script>
 </head>
 <body>
@@ -62,14 +64,7 @@
                     <div class="label-input-calc">        
                         <label for="peso">Peso (kg)</label>
                         <input type="text" name="peso"id="peso" placeholder="Exemplo: 68,5" oninput="validarNumeroVirgula(this)" required>
-                    </div>
-                    <div class="label-input-calc">
-                        <label for="sexo">Sexo</label>
-                        <select name="sexo" id="sexo" required>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Feminino">Feminino</option>                            
-                        </select> 
-                    </div>     
+                    </div>                    
                 </div>      
                         
                 <div class="form-cal-2">
@@ -77,6 +72,16 @@
                         <label for="idade">Idade</label>
                         <input type="text" name="idade" id="idade" placeholder="Exemplo: 28" oninput="validarNumero(this)" required>
                     </div>
+                    <div class="label-input-calc">
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="sexo" required>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>                            
+                        </select> 
+                    </div>                     
+                </div>
+
+                <div class="form-cal-3">
                     <div class="label-input-calc">
                         <label for="atividade">Nível de Atividade Física</label>
                         <select name="atividade" id="atividade" required>
@@ -86,10 +91,18 @@
                             <option value="Muito ativo">Muito ativo</option>                 
                         </select>  
                     </div>
+                    <div class="label-input-calc">
+                        <label for="objetivo">Qual é o seu objetivo?</label>
+                        <select name="objetivo" id="objetivo" required>
+                            <option value="perda de peso">Perda de peso</option>
+                            <option value="manutencao">Manutenção de peso</option>
+                            <option value="ganho">Ganho de massa</option>
+                        </select> 
+                    </div>
                 </div>
             </form>
             <div class="botoes-calc-cal">
-                <button id="botao-limpar">Limpar</button>
+                <button id="botao-limpar" onclick="limparInputs()">Limpar</button>
                 <button id="botao-calcular" onclick="calcularGasto()">Calcular</button>
             </div>
         </div>
@@ -98,37 +111,24 @@
 
         <div class="container-calc-cal-res">
             <h3>Resultado:</h3>
-            <p id="output"> <span class="titulo-destaque-laranja"> </span> kcal</p>
-            <p>Esse valor também é chamado de taxa metabólica basal e servirá como referência para a construção do seu plano alimentar</p>
+            <p>Seu <strong>gasto calórico diário total</strong> é de aproximadamente <span id="output" class="titulo-destaque-laranja">0</span> kcal</p>
+            <p>Use esse valor como referência para a construção do seu plano alimentar</p>
         </div>
 
         <div class="transicao-result"> 
             <h2>Como utilizar essa informação?</h2>
         </div>
-
-        <div class="container-calc-cal-obj">
+        <div class="container-calc-cal-obj-2">
             <div class="objetivo">
-                <p>Qual é o seu objetivo?</p> 
-                <form>
-                    <div class="label-input-calc">
-                        <select name="objetivo">
-                            <option value="perda de peso">Perda de peso</option>
-                            <option value="manutencao">Manutenção de peso</option>
-                            <option value="ganho">Ganho de massa</option>
-                        </select> 
-                    </div>
-                </form>
+            <p>Caso não tenha certeza do seu <strong>objetivo</strong> no momento, utilize nossa <a href="/codigo-fonte/Calculadoras/calc-imc.html"><span class="titulo-destaque-laranja"><u>Calculadora de IMC</u></span></a></p>
+            <p>Com essas duas informações, você terá um bom <strong>referencial</strong> de como construir seu cardápio diário</p>
             </div>
-            <p>Voce deverá consumir ____ Kcal por dia. Use o nosso <a href="/codigo-fonte/Gerar-Cardapio/gerar-cardapio.html">Gerador de Cardápio</a> para auxiliá-lo</p>
-
         </div>
-        
+        <footer class="bg-dark text-light text-center py-3">
+            <p>&copy; 2023 NutriLife - Todos os direitos reservados</p>
+        </footer>
+
     </main>
-    <section>
-
-
-    </section>
-
     <script src="../script.js"></script>
 </body>
 </html>

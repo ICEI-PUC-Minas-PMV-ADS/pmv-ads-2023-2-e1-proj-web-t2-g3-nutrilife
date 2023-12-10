@@ -213,6 +213,24 @@ main {
     text-align: center;      
 }
 
+.container-calc-cal-obj-2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;          
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    background-color: #fef6ef;
+    border-radius: 20px;
+    top: 90px;
+    margin: auto;
+    position: relative;
+    align-content: center;
+    gap: 7px; 
+    text-align: center; 
+    margin-bottom: 130px;     
+}
+
 .container-refeicoes-cardapio {
     display: flex;
     flex-direction: column; 
@@ -231,14 +249,23 @@ main {
 
 .form-cal-1 {
     display: grid;    
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     gap: 20px;
 }
+
 .form-cal-2 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    gap: 115px;
+}
+
+.form-cal-3 {
     display: flex;
     margin: 30px;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .label-input-calc {
@@ -247,7 +274,8 @@ main {
     font-weight: bold;
     border-radius: 15px;    
     border: none;
-    align-items: center;   
+    align-items: center;  
+    text-align: center; 
 }
 
 
@@ -256,6 +284,7 @@ main {
     border: none;
     text-indent: 5px;
     padding: 4px 3px;
+    background-color: #ffffff;
 }
 
 .label-input-calc-obj {
@@ -340,4 +369,24 @@ main {
     align-content: center;
     gap: 7px; 
     text-align: center;
+}
+
+#altura, #peso, #idade, #sexo, #atividade, #objetivo {
+    text-align: center; 
+}
+
+#altura, #peso, #idade {
+    width: 140px;
+}
+
+#sexo {
+    width: 120px;
+}
+
+#atividade {
+    width: 130px;
+}
+
+#objetivo {
+    width: 210px;
 }

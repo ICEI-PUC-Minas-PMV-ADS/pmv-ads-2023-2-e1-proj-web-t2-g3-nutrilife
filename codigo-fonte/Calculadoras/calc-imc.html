@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/codigo-fonte/style.css">
     <link rel="stylesheet" href="/codigo-fonte/Calculadoras/stylecalc.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="/codigo-fonte/Calculadoras/scriptscalc.js" defer></script>
 </head>
 <body>
@@ -78,19 +80,22 @@
             <p id="imc-info">Esse valor corresponde à classificação: <span class="titulo-destaque-laranja"> </span></p>   
             <h3>Tabela de referência:</h3>         
             <div id="img-table">
-                <img src="/codigo-fonte/imgs/IMC_Laranja.png" alt="Tabela com classificão de IMC - índice de massa corporal" width="70%" height="70%">
+                <img src="/codigo-fonte/imgs/IMC_Laranja.png" alt="Tabela com classificão de IMC - índice de massa corporal" width="70%" height="auto">
             </div>
         </div>
 
         <div class="transicao-result"> 
             <h2>Algumas Dicas:</h2>
         </div>
-        <div class="container-calc-cal-obj">
+        <div class="container-calc-cal-obj-2">
             <div class="objetivo">
                 <p>O <u>Índice de Massa Corporal</u> é <strong>apenas um indicador</strong>  do peso ideal e do risco de aparecimento de doenças crônicas, porém, não leva em consideração a <strong>composição corporal</strong> (relação músculos X percentual de gordura)</p>
                 <p>Descubra o seu gasto calórico diário com a nossa <a href="/codigo-fonte/Calculadoras/calc-cal.html"><span class="titulo-destaque-laranja"><u>Calculadora de Gasto Calórico</u></span></a> para auxiliá-lo</p>
             </div>         
-        </div>        
+        </div> 
+        <footer class="bg-dark text-light text-center py-3">
+            <p>&copy; 2023 NutriLife - Todos os direitos reservados</p>
+        </footer>       
     </main>
     <script src="../script.js"></script>
 </body>

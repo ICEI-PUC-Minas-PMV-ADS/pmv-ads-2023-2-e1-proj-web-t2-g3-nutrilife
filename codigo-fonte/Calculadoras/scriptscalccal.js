@@ -19,13 +19,15 @@ function validarNumero(input) {
 //Função Limpar Calculadora
 
 function limparInputs () {
-    alturaInput.value = "";
-    pesoInput.value = "";
-    idadeInput.value = "";
-    sexoInput.value = "";
-    sexoInput.selectedIndex = 0;
-    atividadeInput.value = "";  
-    atividadeInput.selectedIndex = 0; 
+    altura.value = "";
+    peso.value = "";
+    idade.value = "";
+    sexo.value = "";
+    sexo.selectedIndex = 0;
+    atividade.value = "";  
+    atividade.selectedIndex = 0; 
+    objetivo.value = "";  
+    objetivo.selectedIndex = 0; 
 }
 
 limpar.addEventListener("click", function (e) {
@@ -43,18 +45,19 @@ function calcularGasto() {
     const idade = parseInt(document.getElementById('idade').value);
     const sexo = document.getElementById('sexo').value;
     const atividade = document.getElementById('atividade').value;
-    const gasto = calcularGastoCalorico(peso, altura, idade, sexo, atividade);
+    const objetivo = document.getElementById('objetivo').value;
+    const gasto = calcularGastoCalorico(peso, altura, idade, sexo, atividade, objetivo);
     
 
     if (gasto !== null) {
         const outputDiv = document.getElementById("output");
-        outputDiv.innerHTML = `Seu gasto calórico total é aproximadamente ${gasto.toFixed(0)} calorias por dia.`;
+        outputDiv.innerHTML = gasto.toFixed(0);
     } else {
         alert("Algum dado foi fornecido incorretamente. Favor preencher novamente");
     }
 }
 
-function calcularGastoCalorico(peso, altura, idade, sexo, atividade) {
+function calcularGastoCalorico(peso, altura, idade, sexo, atividade, objetivo) {
     let gasto;
 
     if (sexo === "Masculino") {
@@ -66,26 +69,43 @@ function calcularGastoCalorico(peso, altura, idade, sexo, atividade) {
         return null;
     }
 
-    let gastoTotal;
+    let gastoAtividade;
 
     switch (atividade) {
         case "Sedentário":
-            gastoTotal = gasto * 1.2;
+            gastoAtividade = gasto * 1.2;
             break;
         case "Pouco ativo":
-            gastoTotal = gasto * 1.375;
+            gastoAtividade = gasto * 1.375;
             break;
         case "Ativo":
-            gastoTotal = gasto * 1.55;
+            gastoAtividade = gasto * 1.55;
             break;
         case 'ativo':
-            gastoTotal = gasto * 1.725;
+            gastoAtividade = gasto * 1.725;
             break;
         case "Muito ativo":
-            gastoTotal = gasto * 1.9;
+            gastoAtividade = gasto * 1.9;
             break;
         default:
             console.error('Atividade inválida. Escolha entre "Sedentário", "Pouco ativo", "Ativo", "ativo" ou "Muito ativo".');
+            return null;
+    }
+
+    let gastoTotal;
+
+    switch (objetivo) {
+        case "perda de peso":
+            gastoTotal = gastoAtividade * 0.85;
+            break;
+        case "manutencao":
+            gastoTotal = gastoAtividade * 1;
+            break;
+        case "ganho":
+            gastoTotal = gastoAtividade * 1.075;
+            break;
+        default:
+            console.error('Objetivo inválido. Escolha entre "Perda de Pesp", "Manutenção de peso" ou "Ganho de massa".');
             return null;
     }
 
