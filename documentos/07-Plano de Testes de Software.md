@@ -162,7 +162,37 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
    </ol>
    </td>
   <td>Os dados fornecidos tem que estar iguais ao do usuario logado e os resultados das calculadoras</td>
-  <td>Abraão</td>
+  <td>Flavio</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td> CT-06: Conversa com os Nutricionistas</td>
+  <td>
+   <ul>
+    <li>RF-03	A aplicação deve permitir aos usuarios entrar em contato com um nutricionista</li>
+   </ul>
+  </td>
+  <td>Verificar o redirecionamento do Whatsapp presente em um card</td>
+  <td>
+   <ol>
+    <li>Acessar o site.</li>
+    <li>Dentro da home acesse um card escrito "Destaque"</li>
+    <li>Clique em "Conversar!"</li>
+    <li> Valide se o encaminhamento foi feito de forma correta </li>
+   </ol>
+   </td>
+  <td>Você deve ser redirecionando ao whatsapp para iniciar uma conversa</td>
+  <td>Gabriel</td>
  </tr>
 </table>
 
