@@ -174,7 +174,6 @@ o Acesso pode ser feito atraves do menu de navegação na opção "Alimentos"
 
 #### Responsável
 
-Abraão Vicentini
-
+Gabriel Cardoso
 
 
