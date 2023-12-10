@@ -4,10 +4,19 @@ main {
 
 
 .first-conteiner {
-    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    background-color: #fef6ef;
+    border-radius: 20px;
     border-color: #FF9000;
     color: black;
-    padding: 50px;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    align-content: space-evenly;
+    margin-bottom: 40px;
 }
 
 .filho-1 {
@@ -24,6 +33,7 @@ main {
     padding: 50px;
     gap: 20px;
     width: 100%;
+    justify-content: center;
 }
 
 
@@ -170,7 +180,7 @@ main {
 
 
 .content-test:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     /* Aumente a escala em 10% quando o mouse passa por cima */
 }
 
