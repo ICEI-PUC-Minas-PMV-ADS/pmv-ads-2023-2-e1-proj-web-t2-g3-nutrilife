@@ -46,12 +46,12 @@ header {
 .content-header {
     display: flex;
     width: 100%;
-    justify-content: end;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .listaContent-Header {
-    padding-right: 150px;
+    right: 155px;
     text-align: center;
     top: 1px;
     
@@ -73,7 +73,6 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 3px;
     padding-bottom: 10px;
-
 }
 
 .link-login {
@@ -88,6 +87,7 @@ header {
 
 .link-login:hover {
     background-color: #e07f00;
+    text-decoration: none;
 }
 
 .content-header ul li ul {
@@ -119,24 +119,77 @@ header {
     width: 30%;
 }
 
-.menu-user{
-     top: 100%;
-        right: 2%;
+.menu-user {
+    right: 10px;
+    text-align: center;
+    top: 53px;
     }
 
+.button-profile-and-search-input button button li {
+    list-style: none;
+    position: relative;
+}
+
+.button-profile-and-search-input button li a {
+    display: block;
+    font-size: 20px;
+    color: #222;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    padding-bottom: 10px;
+}
+
+.button-profile-and-search-input button li {
+    list-style: none;
+}
+
+.button-profile-and-search-input button li ul{
+    display: none;
+    position: absolute;
+}
+
+.button-profile-and-search-input button li:hover ul {
+    display: block;
+}
+
+.button-profile-and-search-input button li ul li {
+    width: 150px;
+}
+
+.button-profile-and-search-input button li ul li a {
+    padding: 10px 10px;
+}
+
+.button-profile-and-search-input button li ul li a:hover {
+    background-color: rgba(255, 145, 0, 0.9);
+    color: #222;
+}
 
 .button-profile {
-    margin-right: 30px;
     border: none;
     background-color: transparent;
     display: flex;
     cursor: pointer;
+    margin-top: 13px;
+    
 }
 
 .button-profile-and-search-input {
     display: flex;
-    gap: 30px;
+    position: absolute;
     align-items: center;
+    right: 30px;
+    
+}
+
+.button-profile a:hover {
+    text-decoration: none;
+    color:#FFF;
 }
 
 /* FIM HEADER */
@@ -150,7 +203,6 @@ header {
     flex-direction: column;
     width: auto;
     margin-bottom: 1rem;
-
 }
 
 .carousel-inner {
